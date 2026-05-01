@@ -1,0 +1,39 @@
+{
+  "Jawa Barat": [
+    "Bandung",
+    "Bekasi",
+    "Bogor",
+    "Depok",
+    "Cimahi",
+    "Cirebon",
+    "Tasikmalaya",
+    "Sukabumi",
+    "Banjar",
+    "Karawang",
+    "Subang",
+    "Purwakarta",
+    "Indramayu",
+    "Majalengka",
+    "Sumedang",
+    "Garut",
+    "Cianjur",
+    "Kuningan",
+    "Pangandaran"
+  ],
+  "DKI Jakarta": [
+    "Jakarta Pusat",
+    "Jakarta Utara",
+    "Jakarta Barat",
+    "Jakarta Selatan",
+    "Jakarta Timur",
+    "Kepulauan Seribu"
+  ],
+  "Banten": [
+    "Serang",
+    "Cilegon",
+    "Tangerang",
+    "Tangerang Selatan",
+    "Lebak",
+    "Pandeglang"
+  ]
+}

@@ -1,0 +1,1353 @@
+<?php include('./shared/config.php'); ?>
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Spesialis Kanopi <?php echo $kota; ?></title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $base_url; ?>/assets/css/style.css">
+    <style>
+        @media (max-width: 768px) {
+            .text-xl {
+                font-size: 14px!important;
+                line-height: 1.3em!important;
+            }
+            .mb-8 {
+                margin-bottom: 5px!important;
+            }
+            .btn-full-res {
+                width: 100%!important;
+                text-align: center!important;
+                margin-bottom: 10px!important;
+                display: block!important;
+            }
+            .btn-full-wa-res {
+                width: 100%!important;
+                text-align: center!important;
+                display: inline-flex!important;
+                align-items: anchor-center!important;
+                justify-content: center!important;
+            }
+            .hidden-res {
+                display: none!important;
+            }
+        }
+    </style>
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "accent-gold": "#d4af37",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+
+<!-- Top Navigation Bar dengan Menu Responsive Modern -->
+<?php include 'shared/header.php'; ?>
+
+<!-- MODERN SMOOTH SLIDER SECTION (FULL SCRIPT) -->
+<section class="relative h-[85vh] w-full overflow-hidden" id="hero-slider-section">
+    <!-- slider images container -->
+    <div class="absolute inset-0 w-full h-full">
+        <!-- Slide 1 (active by default) -->
+        <div class="hero-slide absolute inset-0 w-full h-full active" data-slide="1">
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/50 to-transparent z-10"></div>
+            <img src="<?php echo $base_url; ?>/assets/images/webp/slider1.webp" 
+            alt="Premium Glass Canopy" class="w-full h-full object-cover slide-transition">
+        </div>
+        <!-- Slide 2 (Membrane) -->
+        <div class="hero-slide absolute inset-0 w-full h-full" data-slide="2">
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/50 to-transparent z-10"></div>
+            <img src="<?php echo $base_url; ?>/assets/images/webp/slider2.webp" 
+            alt="Tensile Membrane Structure" class="w-full h-full object-cover slide-transition">
+        </div>
+        <!-- Slide 3 (Alderon/Carport) -->
+        <!-- <div class="hero-slide absolute inset-0 w-full h-full" data-slide="3">
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/50 to-transparent z-10"></div>
+            <img src="https://images.unsplash.com/photo-1625601353003-90e41b2edf6b?q=80&w=2069&auto=format&fit=crop" 
+                 alt="Modern Carport Canopy" class="w-full h-full object-cover slide-transition">
+        </div> -->
+        <!-- Slide 4 (Polycarbonate) -->
+        <!-- <div class="hero-slide absolute inset-0 w-full h-full" data-slide="4">
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/50 to-transparent z-10"></div>
+            <img src="<?php echo $base_url; ?>/assets/images/webp/testi5.webp" 
+                 alt="Polycarbonate Roof" class="w-full h-full object-cover slide-transition">
+        </div> -->
+    </div>
+
+    <!-- Text content (tetap konsisten, tidak ikut berganti) -->
+    <div class="relative z-20 max-w-7xl mx-auto px-6 lg:px-10 w-full h-full flex items-center">
+        <div class="max-w-3xl transform transition-all duration-1000">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-primary bg-white/95 rounded-full uppercase">Kualitas Terbukti & Pengerjaan Profesional</span>
+            <h1 class="text-5xl md:text-7xl font-black text-white leading-[1.1] mb-6">
+                <span class="text-blue/80">SPESIALIS</span> KANOPI <br/><span class="text-white/90 uppercase"><?php echo $kota; ?></span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-200 font-light leading-relaxed mb-10 max-w-2xl">
+                Pengalaman puluhan tahun dalam pembuatan canopy kuat, rapi, dan tahan lama.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a class="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:scale-105 transition-transform flex items-center gap-2" href="https://wa.me/<?php echo $nohp; ?>?text=Halo%20<?php echo $sapa; ?>,%20saya%20ingin%20konsultasi%20tentang%20canopy,%20Terimakasih." target="_blank">
+                    <i class="fa-brands fa-whatsapp font-bold"></i> &nbsp;Konsultasi Gratis
+                </a>
+                <a href="<?php echo $base_url; ?>/portofolio" class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-slate-900 transition-all">
+                    Lihat Portfolio
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider navigation indicators + progress -->
+    <div class="absolute bottom-10 left-0 right-0 z-30 flex justify-center gap-3 hidden-res">
+        <div class="flex gap-3 bg-black/20 backdrop-blur-md px-4 py-3 rounded-full">
+            <button class="slider-dot w-2.5 h-2.5 rounded-full bg-white/60 hover:bg-white transition-all" data-slide="1"></button>
+            <button class="slider-dot w-2.5 h-2.5 rounded-full bg-white/60 hover:bg-white transition-all" data-slide="2"></button>
+            <!-- <button class="slider-dot w-2.5 h-2.5 rounded-full bg-white/60 hover:bg-white transition-all" data-slide="3"></button> -->
+            <!-- <button class="slider-dot w-2.5 h-2.5 rounded-full bg-white/60 hover:bg-white transition-all" data-slide="4"></button> -->
+        </div>
+    </div>
+    <!-- Progress bar -->
+    <div class="absolute bottom-0 left-0 h-1 bg-primary/70 z-30 slider-progress" style="width: 25%;"></div>
+</section>
+
+<script>
+    (function() {
+        // modern smooth slider dengan auto-play dan progress bar
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.slider-dot');
+        const progressBar = document.querySelector('.slider-progress');
+        let currentSlide = 1;
+        const totalSlides = slides.length;
+        let slideInterval = setInterval(nextSlide, 5000);
+        let isTransitioning = false;
+
+        // set active slide
+        function setActiveSlide(index) {
+            if (isTransitioning) return;
+            isTransitioning = true;
+
+            // validasi index
+            if (index < 1) index = totalSlides;
+            if (index > totalSlides) index = 1;
+            
+            // update class active
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+            document.querySelector(`.hero-slide[data-slide="${index}"]`).classList.add('active');
+            
+            // update dot active
+            dots.forEach((dot, i) => {
+                if (i+1 === index) {
+                    dot.classList.add('bg-white');
+                    dot.classList.remove('bg-white/60');
+                } else {
+                    dot.classList.remove('bg-white');
+                    dot.classList.add('bg-white/60');
+                }
+            });
+
+            // reset progress bar
+            progressBar.style.transition = 'none';
+            progressBar.style.width = '0%';
+            setTimeout(() => {
+                progressBar.style.transition = 'width 5s linear';
+                progressBar.style.width = '100%';
+            }, 50);
+
+            currentSlide = index;
+            
+            // biar tidak double transition
+            setTimeout(() => {
+                isTransitioning = false;
+            }, 1200);
+        }
+
+        function nextSlide() {
+            let next = currentSlide + 1;
+            if (next > totalSlides) next = 1;
+            setActiveSlide(next);
+        }
+
+        // event listener untuk dots
+        dots.forEach((dot, idx) => {
+            dot.addEventListener('click', () => {
+                clearInterval(slideInterval);
+                setActiveSlide(idx + 1);
+                // restart interval
+                slideInterval = setInterval(nextSlide, 5000);
+            });
+        });
+
+        // initial progress
+        setTimeout(() => {
+            progressBar.style.transition = 'width 5s linear';
+            progressBar.style.width = '100%';
+        }, 100);
+
+        // auto cycle
+        setActiveSlide(1); // pastikan slide pertama aktif
+    })();
+</script>
+
+<!-- ========== SECTION SPESIALIS KANOPI MEMBRAN dengan GAMBAR dan TAB GALERI ========== -->
+<section class="relative py-24 px-6 lg:px-10 bg-white dark:bg-background-dark overflow-hidden border-y border-primary/10" id="about">
+    <!-- background pattern halus -->
+    <div class="absolute inset-0 opacity-5">
+        <svg width="100%" height="100%" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,400 Q300,200 600,400 T1200,400 L1200,800 L0,800 Z" fill="currentColor" class="text-primary"></path>
+        </svg>
+    </div>
+    
+    <div class="max-w-7xl mx-auto relative z-10">
+        <!-- header dengan sub-title dan badge pengalaman -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
+            <div>
+                <span class="inline-flex items-center gap-2 text-primary font-black text-sm uppercase tracking-[0.25em] mb-4">
+                    <span class="w-8 h-0.5 bg-primary"></span> SPESIALIS KANOPI <?php echo $kota; ?> <span class="w-8 h-0.5 bg-primary"></span>
+                </span>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white leading-tight max-w-3xl" style="text-transform:uppercase;">
+                    Dipercaya <span class="text-primary">Sejak 1999</span> Hasil Lebih Rapih, Kuat & Aestetic
+                </h2>
+            </div>
+            <div class="flex items-center gap-5 lg:pb-2">
+                <div class="flex -space-x-3">
+                    <div class="w-12 h-12 rounded-full border-2 border-white bg-slate-300 overflow-hidden"><img src="<?php echo $base_url; ?>/assets/images/webp/fajar.webp" class="w-full h-full object-cover" alt="client"></div>
+                    <div class="w-12 h-12 rounded-full border-2 border-white bg-slate-300 overflow-hidden"><img src="<?php echo $base_url; ?>/assets/images/webp/adam.webp" class="w-full h-full object-cover" alt="client"></div>
+                    <div class="w-12 h-12 rounded-full border-2 border-white bg-slate-300 overflow-hidden"><img src="<?php echo $base_url; ?>/assets/images/webp/aisyah.webp" class="w-full h-full object-cover" alt="client"></div>
+                </div>
+                <div class="text-sm font-bold text-slate-600 dark:text-slate-300">
+                    <span class="text-primary text-xl mr-1">1.500+</span> proyek selesai
+                </div>
+            </div>
+        </div>
+
+        <!-- grid 2 kolom: kiri gambar besar + capaian, kanan fitur -->
+        <div class="grid lg:grid-cols-12 gap-8 xl:gap-12" >
+            <!-- LEFT: GAMBAR MEMBRAN YANG IMPRESIF + STATISTIK -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl group h-[400px] lg:h-[500px]">
+                    <!-- gambar utama membran (dari sumber arsitektur) -->
+                    <img src="<?php echo $base_url; ?>/assets/images/webp/kanopi.webp" 
+                    alt="Kanopi membran tensile structure modern" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+                    <!-- overlay teks di gambar -->
+                    <!-- <div class="absolute bottom-6 left-6 text-white">
+                        <span class="bg-primary px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider">Tensile Membrane</span>
+                        <p class="text-2xl font-black mt-3 drop-shadow-lg">The Bayview Dome, Bali</p>
+                    </div> -->
+                </div>
+                <!-- statistik kecil dengan icon -->
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-primary/5 dark:bg-primary/10 rounded-xl p-5 text-center backdrop-blur-sm border border-primary/10">
+                        <span class="material-symbols-outlined text-primary text-3xl">calendar_month</span>
+                        <div class="text-2xl font-black text-slate-900 dark:text-white mt-1">10+</div>
+                        <div class="text-xs font-semibold text-slate-500">Tahun pengalaman</div>
+                    </div>
+                    <div class="bg-primary/5 dark:bg-primary/10 rounded-xl p-5 text-center backdrop-blur-sm border border-primary/10">
+                        <span class="material-symbols-outlined text-primary text-3xl">location_city</span>
+                        <div class="text-2xl font-black text-slate-900 dark:text-white mt-1">800+</div>
+                        <div class="text-xs font-semibold text-slate-500">Klien</div>
+                    </div>
+                    <div class="bg-primary/5 dark:bg-primary/10 rounded-xl p-5 text-center backdrop-blur-sm border border-primary/10">
+                        <span class="material-symbols-outlined text-primary text-3xl">star</span>
+                        <div class="text-2xl font-black text-slate-900 dark:text-white mt-1">100%</div>
+                        <div class="text-xs font-semibold text-slate-500">Kepuasan Klien</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: ADVANTAGES + MEYAKINKAN -->
+            <div class="lg:col-span-5 space-y-8">
+                <!-- highlight: sertifikasi internasional -->
+                <!-- <div class="flex items-center gap-4 bg-primary/10 p-5 rounded-2xl border-l-8 border-primary">
+                    <span class="material-symbols-outlined text-primary text-5xl">verified</span>
+                    <div>
+                        <h3 class="font-black text-slate-900 dark:text-white text-xl">Sertifikasi TensiNet & IFAI</h3>
+                        <p class="text-slate-600 dark:text-slate-400">Tim kami terakreditasi asosiasi membran Eropa dan Amerika.</p>
+                    </div>
+                </div> -->
+
+                <p class="text-slate-600 dark:text-slate-500 mb-8 leading-relaxed font-light">
+                    <span class="text-primary dark:text-slate-700 font-bold"><b>RIZKI ABADI CANOPY</b></span> menghadirkan solusi kanopi modern dengan struktur kokoh, desain elegan, serta material berkualitas tinggi untuk memberikan perlindungan maksimal sekaligus meningkatkan nilai estetika bangunan.
+                </p>
+                <p class="text-slate-600 dark:text-slate-500 mb-8 leading-relaxed font-light">
+                Didukung tenaga profesional dan pengalaman di bidangnya, kami memastikan setiap pemasangan dilakukan secara rapi, kuat, dan tahan lama untuk kebutuhan hunian maupun area komersial.</p>
+                
+
+                <ul class="space-y-4 mb-5">
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary ">check_circle</span>
+                        <div>
+                            <span class="font-bold block text-slate-900 dark:text-white">Struktur Kokoh & Tahan Lama</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary ">check_circle</span>
+                        <div>
+                            <span class="font-bold block text-slate-900 dark:text-white">Material berkualitas premium</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary ">check_circle</span>
+                        <div>
+                            <span class="font-bold block text-slate-900 dark:text-white">Tim Berpengalaman & Terpercaya</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary ">check_circle</span>
+                        <div>
+                            <span class="font-bold block text-slate-900 dark:text-white">Harga Bersahabat, Fleksibel & Transparant</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- advantage list dengan gambar thumb (kombinasi) -->
+
+                <!-- garansi dan ajakan -->
+                <div class="bg-slate-50 dark:bg-slate-800/60 p-7 rounded-2xl border border-slate-200 dark:border-slate-700 mt-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="material-symbols-outlined text-primary text-4xl">shield</span>
+                        <span class="text-2xl font-black text-slate-900 dark:text-white">Garansi 12 Tahun</span>
+                    </div>
+                    <p class="text-slate-500 dark:text-slate-300 text-sm mb-5">Garansi perlindungan terhadap kebocoran dan perubahan warna untuk memastikan kanopi tetap kuat dan tahan lama.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://wa.me/<?php echo $nohp; ?>?text=Halo%20<?php echo $sapa; ?>,%20saya%20ingin%20konsultasi%20tentang%20canopy,%20Terimakasih." target="_blank" class="bg-primary text-white px-6 py-3 rounded-xl font-bold hover:bg-primary/90 shadow-lg shadow-primary/30 flex items-center gap-2">
+                            <span class="material-symbols-outlined">assignment_turned_in</span> Konsultasi desain
+                        </a>
+                        <a href="portofolio" class="border border-primary text-primary px-6 py-3 rounded-xl font-bold hover:bg-primary hover:text-white transition-colors flex items-center gap-2">
+                            <span class="material-symbols-outlined">photo_album</span> Portofolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== MODERN GALLERY TABS DENGAN FITUR ZOOM ===== -->
+        <div class="mt-20 pt-8 border-t border-slate-200 dark:border-slate-800">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <span class="inline-flex items-center gap-2 text-primary font-black text-sm uppercase tracking-[0.25em] mb-4">
+                    <span class="w-8 h-0.5 bg-primary"></span> PORTOFOLIO PROYEK <span class="w-8 h-0.5 bg-primary"></span>
+                </span>
+                <h2 class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-4" style="text-transform: uppercase;">
+                    Hasil <span class="text-primary">Pekerjaan Kami</span>
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 max-w-l mx-auto text-lg">
+                    Kumpulan proyek kanopi membrane yang telah kami kerjakan dengan standar kualitas tinggi, menampilkan detail struktur, kerapihan finishing, serta desain yang menyatu dengan bangunan. Setiap proyek menjadi bukti komitmen kami dalam menghadirkan hasil yang kuat, presisi, dan estetis.
+                </p>
+            </div>
+
+
+
+
+            <!-- Gallery container dengan posisi relative untuk stacking -->
+            <div class="relative" style="min-height: 320px;">
+                <!-- Hotel & Resort Gallery -->
+                <div class="gallery-grid absolute inset-0 transition-all duration-500 opacity-100 translate-y-0 z-10" data-category="hotel">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <!-- Project 1 -->
+<a href="<?php echo $base_url; ?>/portofolio/1" class="group relative flex flex-col gap-4 cursor-pointer mb-8">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Modern Villa" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern luxury villa with glass canopy entrance" src="<?php echo $base_url; ?>/assets/images/webp/portofolio1.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Membrane</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2023</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Rooftop Area Ruko</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>South Jakarta</span>
+        </div> -->
+    </div>
+</a>
+<!-- Project 2 -->
+<a href="<?php echo $base_url; ?>/portofolio/2" class="group relative flex flex-col gap-4 cursor-pointer mb-8">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Tech Plaza" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Contemporary commercial building with steel canopy facade" src="<?php echo $base_url; ?>/assets/images/webp/portofolio2.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Membrane</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2023</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Area Lapangan Sekolah</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>Surabaya Business District</span>
+        </div> -->
+    </div>
+</a>
+<!-- Project 3 -->
+<a href="<?php echo $base_url; ?>/portofolio/3" class="group relative flex flex-col gap-4 cursor-pointer mb-8">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Logistics Park" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Industrial warehouse loading area with heavy duty canopy" src="<?php echo $base_url; ?>/assets/images/webp/portofolio3.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Membrane</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2022</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Carport Rumah</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>Tangerang Port Area</span>
+        </div> -->
+    </div>
+</a>
+<!-- Project 4 -->
+<a href="<?php echo $base_url; ?>/portofolio/4" class="group relative flex flex-col gap-4 cursor-pointer mb-8">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Minimalist Home" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern house with minimalist cantilevered canopy" src="<?php echo $base_url; ?>/assets/images/webp/portofolio4.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Membrane</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2023</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Area Parkir</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>Bandung Highlands</span>
+        </div> -->
+    </div>
+</a>
+<!-- Project 5 -->
+<a href="<?php echo $base_url; ?>/portofolio/5" class="group relative flex flex-col gap-4 cursor-pointer mb-8">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Office Lobby" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern office lobby with architectural skylight canopy" src="<?php echo $base_url; ?>/assets/images/webp/portofolio5.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Awning</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2021</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Penutupdan pelindung Pintu</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>Central Jakarta</span>
+        </div> -->
+    </div>
+</a>
+<!-- Project 6 -->
+<a href="<?php echo $base_url; ?>/portofolio/6" class="group relative flex flex-col gap-4 cursor-pointer mb-8">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Factory Site" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Large manufacturing facility with modular canopy system" src="<?php echo $base_url; ?>/assets/images/webp/portofolio6.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Awning</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2022</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Teras Rumah</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>Cikarang Industrial Estate</span>
+        </div> -->
+    </div>
+</a>
+
+<!-- Project 7 -->
+<a href="<?php echo $base_url; ?>/portofolio/7" class="group relative flex flex-col gap-4 cursor-pointer mb-8">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Factory Site" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Large manufacturing facility with modular canopy system" src="<?php echo $base_url; ?>/assets/images/webp/portofolio7.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Membrane</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2022</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Area Balkon / Teras Lantai 2</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>Cikarang Industrial Estate</span>
+        </div> -->
+    </div>
+</a>
+
+<!-- Project 8 -->
+<a href="<?php echo $base_url; ?>/portofolio/8" class="group relative flex flex-col gap-4 cursor-pointer mb-8">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Factory Site" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Large manufacturing facility with modular canopy system" src="<?php echo $base_url; ?>/assets/images/webp/portofolio8.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Tirai Awning</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2022</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Penutup Samping</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>Cikarang Industrial Estate</span>
+        </div> -->
+    </div>
+</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View all portfolio link -->
+            <div class="text-center mt-10 relative z-20">
+                <a href="<?php echo $base_url; ?>/portofolio" class="inline-flex items-center gap-3 bg-primary/10 text-primary px-8 py-4 rounded-full font-bold hover:bg-primary hover:text-white transition-all group ">
+                    Lihat semua proyek <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+        <!-- ===== END GALLERY TABS DENGAN ZOOM ===== -->
+    </div>
+</section>
+
+<!-- Script untuk Gallery Tabs (VERSI PERBAIKAN) -->
+<script>
+    (function() {
+        // Gallery tabs functionality with smooth transitions - VERSI PERBAIKAN
+        const tabs = document.querySelectorAll('.gallery-tab');
+        const galleries = document.querySelectorAll('.gallery-grid');
+        
+        // Set active tab function
+        function setActiveTab(category) {
+            // Update tab styles
+            tabs.forEach(tab => {
+                const tabCategory = tab.getAttribute('data-category');
+                if (tabCategory === category) {
+                    tab.classList.add('bg-primary', 'text-white', 'shadow-md');
+                    tab.classList.remove('text-slate-600', 'dark:text-slate-300', 'hover:bg-primary/10');
+                } else {
+                    tab.classList.remove('bg-primary', 'text-white', 'shadow-md');
+                    tab.classList.add('text-slate-600', 'dark:text-slate-300', 'hover:bg-primary/10');
+                }
+            });
+            
+            // Smooth transition between galleries
+            galleries.forEach(gallery => {
+                const galleryCategory = gallery.getAttribute('data-category');
+                
+                if (galleryCategory === category) {
+                    // Active gallery - fade in
+                    gallery.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+                    gallery.classList.add('opacity-100', 'translate-y-0', 'z-10');
+                } else {
+                    // Inactive gallery - fade out
+                    gallery.classList.remove('opacity-100', 'translate-y-0', 'z-10');
+                    gallery.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+                }
+            });
+        }
+        
+        // Add click event to tabs
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                const category = this.getAttribute('data-category');
+                setActiveTab(category);
+            });
+        });
+        
+        // Set initial active tab (hotel)
+        setActiveTab('hotel');
+        
+        // Adjust container height based on content
+        function adjustContainerHeight() {
+            const container = document.querySelector('.relative[style*="min-height: 320px"]');
+            const activeGallery = document.querySelector('.gallery-grid.opacity-100');
+            if (container && activeGallery) {
+                const gridHeight = activeGallery.querySelector('.grid').offsetHeight;
+                if (gridHeight > 320) {
+                    container.style.minHeight = gridHeight + 'px';
+                }
+            }
+        }
+        
+        setTimeout(adjustContainerHeight, 500);
+        window.addEventListener('load', adjustContainerHeight);
+    })();
+</script>
+
+<!-- ========== SECTION WORKFLOW / ALUR KERJA YANG ELEGAN ========== -->
+<section class="py-24 px-6 lg:px-10 bg-gradient-to-br from-slate-50 to-white dark:from-background-dark dark:to-slate-900 overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <span class="inline-flex items-center gap-2 text-primary font-black text-sm uppercase tracking-[0.25em] mb-4">
+                <span class="w-8 h-0.5 bg-primary"></span> WORKFLOW PROFESIONAL <span class="w-8 h-0.5 bg-primary"></span>
+            </span>
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-4" style="text-transform: uppercase;">
+                Bagaimana <span class="text-primary">Kami Bekerja</span>
+            </h2>
+            <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg">
+                Proses sistematis yang memastikan setiap proyek kanopi membran berjalan sempurna, dari konsultasi hingga instalasi.
+            </p>
+        </div>
+
+        <!-- Workflow Steps dengan Desain Modern -->
+        <div class="relative">
+            <!-- Garis penghubung (decorative) - hanya muncul di layar besar -->
+            <div class="absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary/30 to-transparent hidden lg:block transform -translate-y-1/2"></div>
+            
+            <!-- Grid Workflow -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+                <!-- Step 1: Konsultasi -->
+                <div class="workflow-card bg-white dark:bg-slate-800/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl border border-slate-100 dark:border-slate-700 relative z-10 fade-in-up delay-1">
+                    <div class="relative mb-6">
+                        <!-- Nomor step dengan desain circular -->
+                        <div class="workflow-number w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-3xl font-black mb-4 transform rotate-0">
+                            01
+                        </div>
+                        <!-- Icon -->
+                        <div class="workflow-icon absolute top-0 right-0 text-6xl text-primary/5">
+                            <span class="material-symbols-outlined text-8xl">chat</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">Konsultasi</h3>
+                    <p class="text-slate-500 dark:text-slate-400 mb-4">
+                        Diskusikan kebutuhan, konsep desain, dan estimasi anggaran.
+                    </p>
+                    <!-- <div class="flex items-center text-sm text-primary font-semibold">
+                        <span class="material-symbols-outlined text-base mr-1">schedule</span> 1-2 hari kerja
+                    </div> -->
+                    <!-- Detail tambahan yang muncul saat hover -->
+                    <div class="absolute inset-0 bg-primary/5 rounded-3xl opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                </div>
+
+                <!-- Step 2: Survey Area -->
+                <div class="workflow-card bg-white dark:bg-slate-800/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl border border-slate-100 dark:border-slate-700 relative z-10 fade-in-up delay-2">
+                    <div class="relative mb-6">
+                        <div class="workflow-number w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-3xl font-black mb-4">
+                            02
+                        </div>
+                        <div class="workflow-icon absolute top-0 right-0 text-6xl text-primary/5">
+                            <span class="material-symbols-outlined text-8xl">square_foot</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">Survey Area</h3>
+                    <p class="text-slate-500 dark:text-slate-400 mb-4">
+                        Pengukuran akurat & analisis kondisi lapangan.
+                    </p>
+                    <!-- <div class="flex items-center text-sm text-primary font-semibold">
+                        <span class="material-symbols-outlined text-base mr-1">schedule</span> 1 hari kerja
+                    </div> -->
+                    <div class="absolute inset-0 bg-primary/5 rounded-3xl opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                </div>
+
+                <!-- Step 3: Fabrikasi -->
+                <div class="workflow-card bg-white dark:bg-slate-800/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl border border-slate-100 dark:border-slate-700 relative z-10 fade-in-up delay-3">
+                    <div class="relative mb-6">
+                        <div class="workflow-number w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-3xl font-black mb-4">
+                            03
+                        </div>
+                        <div class="workflow-icon absolute top-0 right-0 text-6xl text-primary/5">
+                            <span class="material-symbols-outlined text-8xl">precision_manufacturing</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">Fabrikasi</h3>
+                    <p class="text-slate-500 dark:text-slate-400 mb-4">
+                        Proses pembuatan struktur kanopi membran dengan standar kualitas terbaik.
+                    </p>
+                    <!-- <div class="flex items-center text-sm text-primary font-semibold">
+                        <span class="material-symbols-outlined text-base mr-1">schedule</span> 5-10 hari kerja
+                    </div> -->
+                    <div class="absolute inset-0 bg-primary/5 rounded-3xl opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                </div>
+
+                <!-- Step 4: Instalasi -->
+                <div class="workflow-card bg-white dark:bg-slate-800/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl border border-slate-100 dark:border-slate-700 relative z-10 fade-in-up delay-4">
+                    <div class="relative mb-6">
+                        <div class="workflow-number w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-3xl font-black mb-4">
+                            04
+                        </div>
+                        <div class="workflow-icon absolute top-0 right-0 text-6xl text-primary/5">
+                            <span class="material-symbols-outlined text-8xl">construction</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">Instalasi</h3>
+                    <p class="text-slate-500 dark:text-slate-400 mb-4">
+                        Proses pemasangan dan penegangan membran oleh tenaga ahli profesional.
+                    </p>
+                    <!-- <div class="flex items-center text-sm text-primary font-semibold">
+                        <span class="material-symbols-outlined text-base mr-1">schedule</span> 3-7 hari kerja
+                    </div> -->
+                    <div class="absolute inset-0 bg-primary/5 rounded-3xl opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                </div>
+            </div>
+
+            <!-- Timeline indicator (untuk mobile) -->
+            <div class="flex justify-center mt-12 lg:hidden">
+                <div class="flex gap-2">
+                    <div class="w-2 h-2 rounded-full bg-primary/30"></div>
+                    <div class="w-2 h-2 rounded-full bg-primary/30"></div>
+                    <div class="w-2 h-2 rounded-full bg-primary/30"></div>
+                    <div class="w-2 h-2 rounded-full bg-primary/60"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to action kecil -->
+        <div class="text-center mt-10">
+    <a href="https://wa.me/<?php echo $nohp; ?>?text=Halo%20<?php echo $sapa; ?>,%20saya%20mau%20tanya%20harga%20dan%20konsultasi%20Kanopi,%20Terimakasih." class="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-primary/90 hover:text-white transition-all group">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Konsultasi Gratis</span>
+        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+    </a>
+</div>
+    </div>
+</section>
+<!-- ========== END WORKFLOW SECTION ========== -->
+
+<!-- The Canopy Guide Section -->
+<section class="py-24 px-6 lg:px-10 max-w-7xl mx-auto" id="guide">
+    <div class="text-center mb-20">
+        <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">MELAYANI <span class="text-primary">JASA PEMASANGAN</span></h2>
+        <div class="h-1.5 w-24 bg-primary mx-auto rounded-full mb-6"></div>
+        <p class="text-slate-600 dark:text-slate-400 w-full mx-auto text-lg font-light leading-relaxed">
+            Kami melayani jasa pemasangan berbagai jenis kanopi berkualitas untuk rumah, ruko, cafe, dan bangunan komersial. Dikerjakan oleh tenaga profesional dengan material pilihan yang kuat, rapi, dan tahan lama sehingga memberikan perlindungan maksimal sekaligus mempercantik tampilan bangunan Anda.
+        </p>
+    </div>
+    <div class="flex flex-col gap-32">
+<!-- Item 1: Tempered Glass -->
+<div class="group flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+    <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl shadow-2xl transition-all duration-700 group-hover:shadow-primary/10">
+        <img alt="Kanopi Membran" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="<?php echo $base_url; ?>/assets/images/webp/Kanopi-Membran.webp"/>
+    </div>
+    <div class="w-full lg:w-1/2">
+        <!-- <span class="text-primary font-bold tracking-widest text-sm uppercase mb-3 block italic">Signature Series</span> -->
+        <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-3">Kanopi Membran</h3>
+        <div class="flex gap-3 mb-3">
+            <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-lg tracking-wide">LUXURY</span>
+            <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-lg tracking-wide">DURABLE</span>
+        </div>
+        <p class="text-slate-800 dark:text-slate-400 text-lg mb-3">
+            Kanopi berbahan kain khusus berkualitas tinggi (PVC, PVDF, atau PTFE) dengan sistem tarik dan rangka baja kokoh. Fleksibel dibentuk sesuai desain arsitektur, menghadirkan tampilan modern dan elegan.
+        </p>
+        <ul class="space-y-4 mb-5">
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary ">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Tampilan premium</span>
+                    <!-- <span class="text-sm text-slate-500">Crystal clear finish that elevates any structure.</span> -->
+                </div>
+            </li>
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary ">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Bentang lebar tanpa banyak tiang</span>
+                    <!-- <span class="text-sm text-slate-500">Maximizes sun exposure while maintaining safety.</span> -->
+                </div>
+            </li>
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary ">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Tahan panas & hujan</span>
+                    <!-- <span class="text-sm text-slate-500">Engineered to withstand heavy loads and impact.</span> -->
+                </div>
+            </li>
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary ">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Memiliki daya tahan tinggi terhadap cuaca ekstrem</span>
+                    <!-- <span class="text-sm text-slate-500">Engineered to withstand heavy loads and impact.</span> -->
+                </div>
+            </li>
+        </ul>
+        <div class="">
+            <a href="<?php echo $base_url; ?>/layanan/canopi-membran" class="inline-flex gap-2 bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all group btn-detail btn-full-res">
+                <span>Lihat Detail</span>
+                
+            </a>
+            <a target="_blank" href="https://wa.me/<?php echo $nohp; ?>?text=Halo%20<?php echo $sapa; ?>,%20saya%20mau%20tanya%20harga%20dan%20konsultasi%20Kanopi%20Membran,%20Terimakasih." class="inline-flex gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold hover:bg-primary/90 hover:text-white transition-all group btn-detail btn-full-wa-res">
+                <span><i class="fa-brands fa-whatsapp font-bold"></i> &nbsp;Tanya Harga & Konsultasi</span>
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Item 2: Alderon (Reversed) -->
+<div class="group flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
+    <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl shadow-2xl transition-all duration-700 group-hover:shadow-primary/10">
+        <img alt="Kanopi Alderon" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="<?php echo $base_url; ?>/assets/images/webp/canopi-alderon-1.webp"/>
+    </div>
+    <div class="w-full lg:w-1/2">
+        <!-- <span class="text-primary font-bold tracking-widest text-sm uppercase mb-3 block italic">Performance Series</span> -->
+        <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-3">Kanopi Alderon (uPVC)</h3>
+        <div class="flex gap-3 mb-3">
+            <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-lg tracking-wide">THERMAL</span>
+            <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-lg tracking-wide">SILENT</span>
+        </div>
+        <p class="text-slate-800 dark:text-slate-400 text-lg mb-3">
+            Menggunakan atap uPVC berlapis yang efektif meredam panas dan suara hujan, tahan karat, serta cocok untuk kebutuhan hunian maupun usaha.
+        </p>
+        <ul class="space-y-4 mb-5">
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary ">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Meredam panas & suara</span>
+                    <!-- <span class="text-sm text-slate-500">Keep the air underneath cool even in direct sunlight.</span> -->
+                </div>
+            </li>
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary ">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Anti karat</span>
+                    <!-- <span class="text-sm text-slate-500">Sound-absorbing properties reduce rain noise significantly.</span> -->
+                </div>
+            </li>
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary ">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Minim perawatan</span>
+                    <!-- <span class="text-sm text-slate-500">High-performance PVC material is completely corrosion-proof.</span> -->
+                </div>
+            </li>
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary ">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Tampilan rapi</span>
+                    <!-- <span class="text-sm text-slate-500">High-performance PVC material is completely corrosion-proof.</span> -->
+                </div>
+            </li>
+        </ul>
+        <div class="">
+            <a href="<?php echo $base_url; ?>/layanan/canopi-alderon" class="inline-flex gap-3 bg-primary/10 text-primary px-8 py-4 rounded-full font-bold hover:bg-primary hover:text-white transition-all group btn-full-res">
+                <span>Lihat Detail</span>
+                <!--  -->
+            </a>
+            <a target="_blank" href="https://wa.me/<?php echo $nohp; ?>?text=Halo%20<?php echo $sapa; ?>,%20saya%20mau%20tanya%20harga%20dan%20konsultasi%20Kanopi%20Alderon,%20Terimakasih." class="inline-flex gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold hover:bg-primary/90 hover:text-white transition-all group btn-detail btn-full-wa-res">
+                <span><i class="fa-brands fa-whatsapp font-bold"></i> &nbsp;Tanya Harga & Konsultasi</span>
+                <!-- <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span> -->
+            </a>
+        </div>
+        
+    </div>
+</div>
+<!-- Item 3: Membrane (tetap ada di guide, konsisten) -->
+<div class="group flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+    <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl shadow-2xl transition-all duration-700 group-hover:shadow-primary/10">
+        <img alt="Kanopi Membran" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="<?php echo $base_url; ?>/assets/images/webp/Kanopi-Polycarbonate1.webp"/>
+    </div>
+    <div class="w-full lg:w-1/2">
+        <!-- <span class="text-primary font-bold tracking-widest text-sm uppercase mb-3 block italic">Architectural Icon</span> -->
+        <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-3">Kanopi Polycarbonate</h3>
+        <div class="flex gap-3 mb-3">
+            <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-lg tracking-wide">ICONIC</span>
+            <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-lg tracking-wide">VERSATILE</span>
+        </div>
+        <p class="text-slate-800 dark:text-slate-400 text-lg mb-3">
+            Kanopi transparan atau semi transparan yang tetap memasukkan cahaya alami serta melindungi dari hujan, dengan tampilan modern dan minimalis.
+        </p>
+        <ul class="space-y-4 mb-5">
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary ">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Ringan</span>
+                    <!-- <span class="text-sm text-slate-500">Unique artistic curves impossible with rigid materials.</span> -->
+                </div>
+            </li>
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary ">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Tahan benturan</span>
+                    <!-- <span class="text-sm text-slate-500">Requires less structural support than traditional roofs.</span> -->
+                </div>
+            </li>
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary ">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Tampilan Estetis</span>
+                    <!-- <span class="text-sm text-slate-500">Immediately transforms any space into a landmark.</span> -->
+                </div>
+            </li>
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary ">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Memberikan pencahayaan alami</span>
+                    <!-- <span class="text-sm text-slate-500">Immediately transforms any space into a landmark.</span> -->
+                </div>
+            </li>
+        </ul>
+        <div class="">
+            <a href="<?php echo $base_url; ?>/layanan/canopi-polycarbonate" class="inline-flex gap-2 bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all group btn-detail btn-full-res">
+                <span>Lihat Detail</span>
+                
+            </a>
+            <a target="_blank" href="https://wa.me/<?php echo $nohp; ?>?text=Halo%20<?php echo $sapa; ?>,%20saya%20mau%20tanya%20harga%20dan%20konsultasi%20Kanopi%20Polycarbonate,%20Terimakasih." class="inline-flex gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold hover:bg-primary/90 hover:text-white transition-all group btn-detail btn-full-wa-res">
+                <span><i class="fa-brands fa-whatsapp font-bold"></i> &nbsp;Tanya Harga & Konsultasi</span>
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Item 4: Polycarbonate (Reversed) -->
+<div class="group flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
+    <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl shadow-2xl transition-all duration-700 group-hover:shadow-primary/10">
+        <img alt="Kanopi Polycarbonate" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="<?php echo $base_url; ?>/assets/images/webp/Kanopi-Kaca-Tempered.webp"/>
+    </div>
+    <div class="w-full lg:w-1/2">
+        <!-- <span class="text-primary font-bold tracking-widest text-sm uppercase mb-3 block italic">Essential Series</span> -->
+        <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-3">Kanopi Kaca Tempered</h3>
+        <div class="flex gap-3 mb-3">
+            <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-lg tracking-wide">UV-SAFE</span>
+            <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-lg tracking-wide">LIGHT</span>
+        </div>
+        <p class="text-slate-800 dark:text-slate-400 text-lg mb-3">
+            Menggunakan kaca tempered tebal yang dipadukan dengan rangka stainless steel atau baja berkualitas. Memberikan kesan mewah dan elegan sekaligus tetap kokoh dan aman.
+        </p>
+        <ul class="space-y-4 mb-5">
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary ">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Tampilan eksklusif</span>
+                    <!-- <span class="text-sm text-slate-500">High-performance protection at an accessible price.</span> -->
+                </div>
+            </li>
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary ">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Kuat terhadap beban dan benturan</span>
+                    <!-- <span class="text-sm text-slate-500">Advanced coating blocks harmful rays while letting light in.</span> -->
+                </div>
+            </li>
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary ">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Tahan lama</span>
+                    <!-- <span class="text-sm text-slate-500">Choose from tinted or translucent finishes for privacy.</span> -->
+                </div>
+            </li>
+        </ul>
+        <div class="">
+            <a href="<?php echo $base_url; ?>/layanan/canopi-kaca-tempered" class="inline-flex gap-2 bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all group btn-detail btn-full-res">
+                <span>Lihat Detail</span>
+                
+            </a>
+            <a target="_blank" href="https://wa.me/<?php echo $nohp; ?>?text=Halo%20<?php echo $sapa; ?>,%20saya%20mau%20tanya%20harga%20dan%20konsultasi%20Kanopi%20Kaca%20Tempered,%20Terimakasih." class="inline-flex gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold hover:bg-primary/90 hover:text-white transition-all group btn-detail btn-full-wa-res">
+                <span><i class="fa-brands fa-whatsapp font-bold"></i> &nbsp;Tanya Harga & Konsultasi</span>
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Item 5: Laminated Glass -->
+<div class="group flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+    <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl shadow-2xl transition-all duration-700 group-hover:shadow-primary/10">
+        <img alt="Kanopi Kaca Laminated" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="<?php echo $base_url; ?>/assets/images/webp/Kanopi-Spandek.webp"/>
+    </div>
+    <div class="w-full lg:w-1/2">
+        <!-- <span class="text-primary font-bold tracking-widest text-sm uppercase mb-3 block italic">Maximum Security</span> -->
+        <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-3">Kanopi Spandek</h3>
+        <div class="flex gap-3 mb-3">
+            <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-lg tracking-wide">SECURE</span>
+            <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-lg tracking-wide">SILENT</span>
+        </div>
+        <p class="text-slate-800 dark:text-slate-400 text-lg mb-3">
+            Kanopi berbahan campuran aluminium dan zinc yang ringan serta ekonomis. Pemasangannya relatif cepat dan cocok untuk kebutuhan praktis dengan anggaran lebih terjangkau.
+        </p>
+        <ul class="space-y-4 mb-5">
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Harga ekonomis</span>
+                    <!-- <span class="text-sm text-slate-500">Interlayer film provides superior security and protection.</span> -->
+                </div>
+            </li>
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Ringan</span>
+                    <!-- <span class="text-sm text-slate-500">Effective noise barrier for urban environments.</span> -->
+                </div>
+            </li>
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Tahan karat</span>
+                    <!-- <span class="text-sm text-slate-500">Unmatched visual depth and professional aesthetics.</span> -->
+                </div>
+            </li>
+            <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-primary">check_circle</span>
+                <div>
+                    <span class="font-bold block text-slate-900 dark:text-white">Pemasangan cepat</span>
+                    <!-- <span class="text-sm text-slate-500">Unmatched visual depth and professional aesthetics.</span> -->
+                </div>
+            </li>
+        </ul>
+        <div class="">
+            <a href="<?php echo $base_url; ?>/layanan/canopi-spandek" class="inline-flex gap-2 bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all group btn-detail btn-full-res">
+                <span>Lihat Detail</span>
+                
+            </a>
+            <a target="_blank" href="https://wa.me/<?php echo $nohp; ?>?text=Halo%20<?php echo $sapa; ?>,%20saya%20mau%20tanya%20harga%20dan%20konsultasi%20Kanopi%20Spandek,%20Terimakasih." class="inline-flex gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold hover:bg-primary/90 hover:text-white transition-all group btn-detail btn-full-wa-res">
+                <span><i class="fa-brands fa-whatsapp font-bold"></i> &nbsp;Tanya Harga & Konsultasi</span>
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</section>
+
+<!-- ========== SECTION TESTIMONIAL CAROUSEL 3 KOLOM PER SLIDE ========== -->
+<section class="py-24 px-6 lg:px-10 bg-gradient-to-b from-white to-slate-50 dark:from-background-dark dark:to-slate-900 overflow-hidden" id="testimonial">
+    <div class="max-w-7xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <span class="inline-flex items-center gap-2 text-primary font-black text-sm uppercase tracking-[0.25em] mb-4">
+                <span class="w-8 h-0.5 bg-primary"></span> TESTIMONIAL <span class="w-8 h-0.5 bg-primary"></span>
+            </span>
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-4" style="text-transform:uppercase;">
+                Apa Kata <span class="text-primary">Klien Kami</span>
+            </h2>
+            <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg">
+                500+ klien kami puas dengan pelayanan jasa kami yang rapih, kuat dan tahan lama, karena menggunakan material premium yang bisa bertahan hingga belasan tahun.
+            </p>
+        </div>
+
+        <!-- CAROUSEL 3 KOLOM -->
+        <div class="testimonial-carousel-container">
+            <div class="testimonial-carousel-track" id="testimonialTrack">
+                <!-- SLIDE 1: Testi 1,2,3 -->
+                <div class="testimonial-carousel-slide">
+                    <!-- Testi 3 -->
+                    <div class="bg-white dark:bg-slate-800/80 rounded-2xl p-6 shadow-xl">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="<?php echo $base_url; ?>/assets/images/webp/firman.webp" class="w-16 h-16 rounded-full border-4 border-primary/20">
+                            <div><h4 class="font-bold text-lg">Firman Abdul Hakim</h4><p class="text-primary text-sm">Area Lapangan Sekolah</p><div class="star-rating">★★★★★</div></div>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 italic mb-4">"Pengerjaan Rapih, materialnya oke tebel tebel dan kokoh, harga cukup murah, rekomendasi banget pokonya."</p>
+                        <div class="flex justify-end">
+                            <!-- Gambar Testimonial: Diperkecil -->
+                            <span onclick="openModal('<?php echo $base_url; ?>/assets/images/webp/portofolio2.webp','Masjid Al-Ikhlas')" class="testimonial-image w-full h-30 rounded-lg overflow-hidden cursor-pointer border-2 border-primary/30 inline-block">
+                                <img src="<?php echo $base_url; ?>/assets/images/webp/portofolio2.webp" class="w-full h-full object-cover">
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Testi 4 -->
+                    <div class="bg-white dark:bg-slate-800/80 rounded-2xl p-6 shadow-xl">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="<?php echo $base_url; ?>/assets/images/webp/bunga.webp" class="w-16 h-16 rounded-full border-4 border-primary/20">
+                            <div><h4 class="font-bold text-lg">Resna SariBunga</h4><p class="text-primary text-sm">Area Teras Rumah</p><div class="star-rating">★★★★☆</div></div>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 italic mb-4">"Teras rumah cadi makin cantik setelah pakai kanopi, pengerjaan rapih, harga terjangkau."</p>
+                        <div class="flex justify-end">
+                            <span onclick="openModal('<?php echo $base_url; ?>/assets/images/webp/portofolio6.webp','Area Teras Rumah')" class="testimonial-image w-full h-30 rounded-lg overflow-hidden cursor-pointer border-2 border-primary/30 inline-block">
+                                <img src="<?php echo $base_url; ?>/assets/images/webp/portofolio6.webp" class="w-full h-full object-cover">
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Testi 5 -->
+                    <div class="bg-white dark:bg-slate-800/80 rounded-2xl p-6 shadow-xl">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="<?php echo $base_url; ?>/assets/images/webp/almira.webp" class="w-16 h-16 rounded-full border-4 border-primary/20">
+                            <div><h4 class="font-bold text-lg">Almira</h4><p class="text-primary text-sm">Area Tempat Usaha</p><div class="star-rating">★★★★★</div></div>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 italic mb-4">"Rapih banget, harga terjangkau, dan saya lihat bahannya sangat tebal dan kuat, rekomendasi bangett."</p>
+                        <div class="flex justify-end">
+                            <span onclick="openModal('<?php echo $base_url; ?>/assets/images/webp/portofolio5.webp','Area Tempat Usaha')" class="testimonial-image w-full h-30 rounded-lg overflow-hidden cursor-pointer border-2 border-primary/30 inline-block">
+                                <img src="<?php echo $base_url; ?>/assets/images/webp/portofolio5.webp" class="w-full h-full object-cover">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-carousel-slide">
+                    <!-- Testi 6 -->
+                    <div class="bg-white dark:bg-slate-800/80 rounded-2xl p-6 shadow-xl">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="<?php echo $base_url; ?>/assets/images/webp/adam.webp" class="w-16 h-16 rounded-full border-4 border-primary/20">
+                            <div><h4 class="font-bold text-lg">Adam Muslim</h4><p class="text-primary text-sm">Area Parkiran Mall</p><div class="star-rating">★★★★★</div></div>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 italic mb-4">"Ga di ragukan lagi kualitas dari Rizki Abadi Canopy, pengerjaan rapih, kualitas OKE, harga juga sangat terjangkau."</p>
+                        <div class="flex justify-end">
+                            <span onclick="openModal('<?php echo $base_url; ?>/assets/images/webp/portofolio4.webp','Area Parkiran')" class="testimonial-image w-full h-30 rounded-lg overflow-hidden cursor-pointer border-2 border-primary/30 inline-block">
+                                <img src="<?php echo $base_url; ?>/assets/images/webp/portofolio4.webp" class="w-full h-full object-cover">
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Testi 7 -->
+                    <div class="bg-white dark:bg-slate-800/80 rounded-2xl p-6 shadow-xl">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="<?php echo $base_url; ?>/assets/images/webp/fajar.webp" class="w-16 h-16 rounded-full border-4 border-primary/20">
+                            <div><h4 class="font-bold text-lg">Fajar Nugraha</h4><p class="text-primary text-sm">Area Ruftop</p><div class="star-rating">★★★★★</div></div>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 italic mb-4">"Area ruftop jadi makin keren setelah pakai kanopi membrain dari Rizki Abadi Canopy ini, rapih dan kokoh."</p>
+                        <div class="flex justify-end">
+                            <span onclick="openModal('<?php echo $base_url; ?>/assets/images/webp/portofolio1.webp','Area Ruftop')" class="testimonial-image w-full h-30 rounded-lg overflow-hidden cursor-pointer border-2 border-primary/30 inline-block">
+                                <img src="<?php echo $base_url; ?>/assets/images/webp/portofolio1.webp" class="w-full h-full object-cover">
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Testi 8 -->
+                    <div class="bg-white dark:bg-slate-800/80 rounded-2xl p-6 shadow-xl">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="<?php echo $base_url; ?>/assets/images/webp/aisyah.webp" class="w-16 h-16 rounded-full border-4 border-primary/20">
+                            <div><h4 class="font-bold text-lg">Ibu Aisyah</h4><p class="text-primary text-sm">Area Carpot</p><div class="star-rating">★★★★★</div></div>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 italic mb-4">"Bagus baget hasilnya, rapih bahan bahannya juga kelihatanya sangat berkualitas soalnya tebel tebel, pasti bahal awet banget ini."</p>
+                        <div class="flex justify-end">
+                            <span onclick="openModal('<?php echo $base_url; ?>/assets/images/webp/portofolio3.webp','Area Carpot')" class="testimonial-image w-full h-30 rounded-lg overflow-hidden cursor-pointer border-2 border-primary/30 inline-block">
+                                <img src="<?php echo $base_url; ?>/assets/images/webp/portofolio3.webp" class="w-full h-full object-cover">
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation buttons & dots -->
+        <div class="flex justify-center items-center gap-6">
+            <button id="prevTestimonial" class="w-12 h-12 bg-white dark:bg-slate-800 rounded-full shadow-xl flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <div class="flex gap-2" id="testimonialDots">
+                <button class="w-3 h-3 rounded-full bg-primary scale-125" data-index="0"></button>
+                <button class="w-3 h-3 rounded-full bg-primary/30 hover:bg-primary/60" data-index="1"></button>
+            </div>
+            <button id="nextTestimonial" class="w-12 h-12 bg-white dark:bg-slate-800 rounded-full shadow-xl flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+        </div>
+
+        <!-- Statistik -->
+        <!-- <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-16">
+            <div class="bg-white dark:bg-slate-800/60 rounded-2xl p-6 shadow-xl text-center"><div class="text-4xl font-black text-primary">150+</div><div class="text-sm font-semibold text-slate-500 uppercase tracking-wider">Proyek Selesai</div></div>
+            <div class="bg-white dark:bg-slate-800/60 rounded-2xl p-6 shadow-xl text-center"><div class="text-4xl font-black text-primary">98%</div><div class="text-sm font-semibold text-slate-500 uppercase tracking-wider">Kepuasan Klien</div></div>
+            <div class="bg-white dark:bg-slate-800/60 rounded-2xl p-6 shadow-xl text-center"><div class="text-4xl font-black text-primary">12</div><div class="text-sm font-semibold text-slate-500 uppercase tracking-wider">Tahun Pengalaman</div></div>
+            <div class="bg-white dark:bg-slate-800/60 rounded-2xl p-6 shadow-xl text-center"><div class="text-4xl font-black text-primary">28</div><div class="text-sm font-semibold text-slate-500 uppercase tracking-wider">Kota di Indonesia</div></div>
+        </div> -->
+    </div>
+
+    <div class="text-center mt-10">
+    <a href="https://wa.me/<?php echo $nohp; ?>?text=Halo%20<?php echo $sapa; ?>,%20saya%20mau%20tanya%20harga%20dan%20konsultasi%20Kanopi,%20Terimakasih." class="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-primary/90 hover:text-white transition-all group">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Konsultasi Gratis</span>
+        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+    </a>
+</div>
+</section>
+
+
+
+
+<script>
+    // Carousel 3 kolom
+    const track = document.getElementById('testimonialTrack');
+    const slides = document.querySelectorAll('.testimonial-carousel-slide');
+    const prevBtn = document.getElementById('prevTestimonial');
+    const nextBtn = document.getElementById('nextTestimonial');
+    const dots = document.querySelectorAll('#testimonialDots button');
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+
+    function updateCarousel(index) {
+        if (index < 0) index = totalSlides - 1;
+        if (index >= totalSlides) index = 0;
+        track.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach((dot, i) => {
+            if (i === index) {
+                dot.classList.add('bg-primary', 'scale-125');
+                dot.classList.remove('bg-primary/30', 'hover:bg-primary/60');
+            } else {
+                dot.classList.remove('bg-primary', 'scale-125');
+                dot.classList.add('bg-primary/30', 'hover:bg-primary/60');
+            }
+        });
+        currentIndex = index;
+    }
+
+    prevBtn.addEventListener('click', () => updateCarousel(currentIndex - 1));
+    nextBtn.addEventListener('click', () => updateCarousel(currentIndex + 1));
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => updateCarousel(i));
+    });
+
+    // Auto slide setiap 5 detik
+    setInterval(() => updateCarousel(currentIndex + 1), 5000);
+</script>
+
+<!-- Modal Zoom -->
+<div class="modal-backdrop" id="imageModal" onclick="closeModal(event)">
+    <span class="modal-close" onclick="closeModal(event)">&times;</span>
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <img id="modalImage" src="" class="w-full h-full object-contain">
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white" id="modalCaption"></div>
+    </div>
+</div>
+
+<script>
+    function openModal(src, caption) {
+        document.getElementById('modalImage').src = src;
+        document.getElementById('modalCaption').innerText = caption;
+        document.getElementById('imageModal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeModal(e) {
+        if(e.target.classList.contains('modal-backdrop') || e.target.classList.contains('modal-close')) {
+            document.getElementById('imageModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    }
+    document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeModal(e); });
+</script>
+
+
+
+<!-- Interactive Price Calculator -->
+<!-- <section class="py-24 bg-white dark:bg-background-dark/50 px-6 lg:px-10" id="calculator">
+    <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-4 italic">Instant Estimation</h2>
+            <p class="text-slate-600 dark:text-slate-400">Calculate your investment based on canopy type and dimensions.</p>
+        </div>
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl p-8 md:p-12">
+            <div class="grid md:grid-cols-2 gap-8 mb-10">
+                <div class="space-y-2">
+                    <label class="text-xs font-black uppercase text-slate-500 tracking-widest">Canopy Type</label>
+                    <select class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg p-3 focus:ring-primary focus:border-primary transition-all">
+                        <option>Tempered Glass (10mm)</option>
+                        <option>Alderon Double Wall</option>
+                        <option>Membrane Tensile</option>
+                        <option>Polycarbonate Premium</option>
+                        <option>Laminated Glass (5+5)</option>
+                    </select>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-2">
+                        <label class="text-xs font-black uppercase text-slate-500 tracking-widest">Width (m)</label>
+                        <input class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg p-3 focus:ring-primary focus:border-primary" placeholder="0.0" type="number"/>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-black uppercase text-slate-500 tracking-widest">Length (m)</label>
+                        <input class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg p-3 focus:ring-primary focus:border-primary" placeholder="0.0" type="number"/>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 p-6 bg-primary/5 rounded-xl border border-primary/10">
+                <div>
+                    <span class="text-sm font-semibold text-slate-500">Estimated Range</span>
+                    <div class="text-3xl font-black text-primary">Rp 4.500.000 - Rp 6.200.000</div>
+                </div>
+                <button class="w-full md:w-auto bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-primary/90 shadow-lg shadow-primary/20 transition-all">
+                    Request Detailed Quote
+                </button>
+            </div>
+            <p class="text-[10px] text-center mt-6 text-slate-400 uppercase tracking-widest">Estimated prices include frame and installation. Final price depends on structural complexity.</p>
+        </div>
+    </div>
+</section> -->
+<!-- Technical Comparison Table -->
+<!-- <section class="py-24 px-6 lg:px-10 max-w-7xl mx-auto overflow-x-auto" id="compare">
+    <div class="text-center mb-16">
+        <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-4">Comparison Matrix</h2>
+        <div class="h-1 w-16 bg-primary mx-auto rounded-full mb-6"></div>
+    </div>
+    <table class="w-full text-left border-collapse min-w-[800px]">
+        <thead>
+            <tr class="border-b-2 border-slate-200 dark:border-slate-800">
+                <th class="py-4 font-black text-slate-900 dark:text-white uppercase text-xs tracking-widest">Material Type</th>
+                <th class="py-4 font-black text-slate-900 dark:text-white uppercase text-xs tracking-widest">Durability</th>
+                <th class="py-4 font-black text-slate-900 dark:text-white uppercase text-xs tracking-widest">Heat Insulation</th>
+                <th class="py-4 font-black text-slate-900 dark:text-white uppercase text-xs tracking-widest">Light Trans.</th>
+                <th class="py-4 font-black text-slate-900 dark:text-white uppercase text-xs tracking-widest">Price Tier</th>
+            </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100 dark:divide-slate-800/50">
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+                <td class="py-6 font-bold text-slate-900 dark:text-white">Tempered Glass</td>
+                <td class="py-6 text-slate-500">Excellent (Impact Resistant)</td>
+                <td class="py-6 text-slate-500">Low (Absorbs Heat)</td>
+                <td class="py-6 text-slate-500">95% (Crystal Clear)</td>
+                <td class="py-6"><span class="px-2 py-1 bg-slate-900 text-white text-[10px] font-black rounded uppercase tracking-tighter italic">Premium</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+                <td class="py-6 font-bold text-slate-900 dark:text-white">Alderon</td>
+                <td class="py-6 text-slate-500">High (Corrosion Proof)</td>
+                <td class="py-6 text-slate-500">Excellent (Twinwall)</td>
+                <td class="py-6 text-slate-500">0% (Opaque)</td>
+                <td class="py-6"><span class="px-2 py-1 bg-slate-400 text-white text-[10px] font-black rounded uppercase tracking-tighter italic">Mid-Range</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+                <td class="py-6 font-bold text-slate-900 dark:text-white">Membrane</td>
+                <td class="py-6 text-slate-500">High (Weather Proof)</td>
+                <td class="py-6 text-slate-500">Good</td>
+                <td class="py-6 text-slate-500">10-20% (Diffused)</td>
+                <td class="py-6"><span class="px-2 py-1 bg-slate-900 text-white text-[10px] font-black rounded uppercase tracking-tighter italic">Premium</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+                <td class="py-6 font-bold text-slate-900 dark:text-white">Polycarbonate</td>
+                <td class="py-6 text-slate-500">Moderate</td>
+                <td class="py-6 text-slate-500">Moderate (UV Filter)</td>
+                <td class="py-6 text-slate-500">40-80% (Variable)</td>
+                <td class="py-6"><span class="px-2 py-1 bg-primary text-white text-[10px] font-black rounded uppercase tracking-tighter italic">Affordable</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+                <td class="py-6 font-bold text-slate-900 dark:text-white">Laminated Glass</td>
+                <td class="py-6 text-slate-500">Max (Safety Glass)</td>
+                <td class="py-6 text-slate-500">Low (UV Only)</td>
+                <td class="py-6 text-slate-500">90% (Premium)</td>
+                <td class="py-6"><span class="px-2 py-1 bg-slate-900 text-white text-[10px] font-black rounded uppercase tracking-tighter italic">Ultra-Lux</span></td>
+            </tr>
+        </tbody>
+    </table>
+</section> -->
+<!-- Footer -->
+<?php include 'shared/footer.php'; ?>
+</body>
+</html>

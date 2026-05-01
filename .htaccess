@@ -1,0 +1,46 @@
+Header set Accept-Ranges bytes
+RewriteEngine On
+
+# Sitemap
+RewriteRule ^sitemap-index\.xml$ sitemap-index.php [L]
+RewriteRule ^page-sitemap\.xml$ sitemap-detail.php [L]
+RewriteRule ^anime-sitemap([0-9]+)\.xml$ sitemap-detail.php?i=$1 [L]
+
+# Kota
+RewriteRule ^kota/([a-zA-Z0-9_-]+)/?$ index.php?kota=$1 [L,QSA]
+
+# Detail Portofolio
+# RewriteRule ^portofolio/([a-zA-Z0-9_-]+)/?$ detail-portofolio.php?judul=$1 [L,QSA]
+RewriteRule ^portofolio/1$ detail-portofolio1.php [L]
+RewriteRule ^portofolio/2$ detail-portofolio2.php [L]
+RewriteRule ^portofolio/3$ detail-portofolio3.php [L]
+RewriteRule ^portofolio/4$ detail-portofolio4.php [L]
+RewriteRule ^portofolio/5$ detail-portofolio5.php [L]
+RewriteRule ^portofolio/6$ detail-portofolio6.php [L]
+RewriteRule ^portofolio/7$ detail-portofolio7.php [L]
+RewriteRule ^portofolio/8$ detail-portofolio8.php [L]
+RewriteRule ^portofolio/9$ detail-portofolio9.php [L]
+RewriteRule ^portofolio/10$ detail-portofolio10.php [L]
+
+
+# Detail Portofolio
+# RewriteRule ^layanan/([a-zA-Z0-9_-]+)/?$ detail-layanan.php?judul=$1 [L,QSA]
+RewriteRule ^layanan/canopi-membran$ detail-canopi-membran.php [L]
+RewriteRule ^layanan/canopi-alderon$ detail-canopi-alderon.php [L]
+RewriteRule ^layanan/canopi-polycarbonate$ detail-canopi-polycarbonate.php [L]
+RewriteRule ^layanan/canopi-kaca-tempered$ detail-canopi-kaca-tempered.php [L]
+RewriteRule ^layanan/canopi-spandek$ detail-canopi-spandek.php [L]
+RewriteRule ^layanan/canopi-awning$ detail-canopi-awning.php [L]
+RewriteRule ^layanan/6$ detail-layanan6.php [L]
+RewriteRule ^layanan/7$ detail-layanan7.php [L]
+RewriteRule ^layanan/8$ detail-layanan8.php [L]
+RewriteRule ^layanan/9$ detail-layanan9.php [L]
+RewriteRule ^layanan/10$ detail-layanan10.php [L]
+
+# Halaman Portofolio
+RewriteRule ^portofolio/?$ portofolio.php [L]
+
+# Halaman lain
+RewriteRule ^layanan/?$ layanan.php [L]
+RewriteRule ^tentang-kami/?$ about-us.php [L]
+RewriteRule ^hubungi-kami/?$ contact-us.php [L]

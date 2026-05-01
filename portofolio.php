@@ -1,0 +1,333 @@
+<?php include('./shared/config.php'); ?>
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Portfolio | Rizki Abadi Canopy</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $base_url; ?>/assets/css/style.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        @media (max-width: 768px) {
+            .text-xl {
+                font-size: 16px!important;
+                line-height: 1.3em!important;
+            }
+            .mb-8 {
+                margin-bottom: 5px!important;
+            }
+            .btn-full-res {
+                width: 100%!important;
+                text-align: center!important;
+                margin-bottom: 10px!important;
+                display: block!important;
+            }
+            .btn-full-wa-res {
+                width: 100%!important;
+                text-align: center!important;
+                display: inline-flex!important;
+                align-items: anchor-center!important;
+                justify-content: center!important;
+            }
+            .hidden-res {
+                display: none!important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+    <div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<!-- Navigation -->
+<?php include('shared/header.php'); ?>
+<main class="flex-1">
+<!-- Hero Section -->
+<section class="mx-auto max-w-7xl px-6 py-12 lg:px-10 lg:py-20">
+    <div class="max-w-l">
+    <h1 class="text-4xl font-black leading-tight tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl lg:text-6xl">
+        Portofolio <span class="text-primary text-glow">Proyek Kami</span>
+    </h1>
+    <p class="mt-6 text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+        Lihat berbagai proyek kanopi membrane yang telah kami kerjakan dengan standar kualitas tinggi. 
+        Mulai dari kanopi rumah modern hingga proyek skala besar, setiap pemasangan kami kerjakan dengan 
+        struktur yang kokoh, detail yang rapi, dan desain yang menyatu dengan bangunan.
+    </p>
+</div>
+<!-- Filters -->
+<!-- <div class="mt-12 flex flex-wrap items-center gap-3">
+    <button class="rounded-full bg-primary px-6 py-2 text-sm font-bold text-white hover:shadow-lg hover:shadow-primary/30 hover:scale-105 transition-all duration-300">All Works</button>
+    <button class="rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-6 py-2 text-sm font-semibold text-slate-600 dark:text-slate-400 hover:border-primary hover:text-primary hover:scale-105 hover:shadow-md transition-all duration-300">Residential</button>
+    <button class="rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-6 py-2 text-sm font-semibold text-slate-600 dark:text-slate-400 hover:border-primary hover:text-primary hover:scale-105 hover:shadow-md transition-all duration-300">Commercial</button>
+    <button class="rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-6 py-2 text-sm font-semibold text-slate-600 dark:text-slate-400 hover:border-primary hover:text-primary hover:scale-105 hover:shadow-md transition-all duration-300">Industrial</button>
+</div> -->
+</section>
+<!-- Grid -->
+<section class="mx-auto max-w-7xl px-6 pb-24 lg:px-10">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+<!-- Project 1 -->
+<a href="<?php echo $base_url; ?>/portofolio/1" class="group relative flex flex-col gap-4 cursor-pointer mb-6">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Modern Villa" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern luxury villa with glass canopy entrance" src="<?php echo $base_url; ?>/assets/images/webp/portofolio1.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Membrane</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2023</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Rooftop Area Ruko</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>South Jakarta</span>
+        </div> -->
+    </div>
+</a>
+<!-- Project 2 -->
+<a href="<?php echo $base_url; ?>/portofolio/2" class="group relative flex flex-col gap-4 cursor-pointer mb-6">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Tech Plaza" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Contemporary commercial building with steel canopy facade" src="<?php echo $base_url; ?>/assets/images/webp/portofolio2.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Membrane</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2023</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Area Lapangan Sekolah</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>Surabaya Business District</span>
+        </div> -->
+    </div>
+</a>
+<!-- Project 3 -->
+<a href="<?php echo $base_url; ?>/portofolio/3" class="group relative flex flex-col gap-4 cursor-pointer mb-6">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Logistics Park" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Industrial warehouse loading area with heavy duty canopy" src="<?php echo $base_url; ?>/assets/images/webp/portofolio3.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Membrane</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2022</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Carport Rumah</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>Tangerang Port Area</span>
+        </div> -->
+    </div>
+</a>
+<!-- Project 4 -->
+<a href="<?php echo $base_url; ?>/portofolio/4" class="group relative flex flex-col gap-4 cursor-pointer mb-6">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Minimalist Home" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern house with minimalist cantilevered canopy" src="<?php echo $base_url; ?>/assets/images/webp/portofolio4.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Membrane</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2023</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Area Parkir</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>Bandung Highlands</span>
+        </div> -->
+    </div>
+</a>
+<!-- Project 5 -->
+<a href="<?php echo $base_url; ?>/portofolio/5" class="group relative flex flex-col gap-4 cursor-pointer mb-6">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Office Lobby" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern office lobby with architectural skylight canopy" src="<?php echo $base_url; ?>/assets/images/webp/portofolio5.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Awning</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2021</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Penutupdan pelindung Pintu</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>Central Jakarta</span>
+        </div> -->
+    </div>
+</a>
+<!-- Project 6 -->
+<a href="<?php echo $base_url; ?>/portofolio/6" class="group relative flex flex-col gap-4 cursor-pointer mb-6">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Factory Site" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Large manufacturing facility with modular canopy system" src="<?php echo $base_url; ?>/assets/images/webp/portofolio6.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Awning</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2022</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Teras Rumah</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>Cikarang Industrial Estate</span>
+        </div> -->
+    </div>
+</a>
+
+<!-- Project 7 -->
+<a href="<?php echo $base_url; ?>/portofolio/7" class="group relative flex flex-col gap-4 cursor-pointer mb-6">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Factory Site" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Large manufacturing facility with modular canopy system" src="<?php echo $base_url; ?>/assets/images/webp/portofolio7.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Membrane</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2022</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Area Balkon / Teras Lantai 2</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>Cikarang Industrial Estate</span>
+        </div> -->
+    </div>
+</a>
+
+<!-- Project 8 -->
+<a href="<?php echo $base_url; ?>/portofolio/8" class="group relative flex flex-col gap-4 cursor-pointer mb-6">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Factory Site" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Large manufacturing facility with modular canopy system" src="<?php echo $base_url; ?>/assets/images/webp/portofolio8.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Tirai Awning</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2022</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Penutup Samping</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>Cikarang Industrial Estate</span>
+        </div> -->
+    </div>
+</a>
+
+<!-- Project 9 -->
+<a href="<?php echo $base_url; ?>/portofolio/9" class="group relative flex flex-col gap-4 cursor-pointer mb-6">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Factory Site" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Large manufacturing facility with modular canopy system" src="<?php echo $base_url; ?>/assets/images/webp/portofolio9.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Awning</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2022</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Area depan bangunan komersial</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>Cikarang Industrial Estate</span>
+        </div> -->
+    </div>
+</a>
+
+<!-- Project 10 -->
+<a href="<?php echo $base_url; ?>/portofolio/10" class="group relative flex flex-col gap-4 cursor-pointer mb-6">
+    <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+        <img alt="Factory Site" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Large manufacturing facility with modular canopy system" src="<?php echo $base_url; ?>/assets/images/webp/portofolio10.webp"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Membrane</span>
+            <!-- <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2022</span> -->
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300">Area Komersial / Fasilitas Publik</h3>
+        <!-- <div class="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>
+            <span>Cikarang Industrial Estate</span>
+        </div> -->
+    </div>
+</a>
+
+</div>
+<!-- Pagination/Load More -->
+<!-- <div class="mt-20 flex justify-center">
+    <button class="flex items-center gap-2 rounded-lg border-2 border-primary px-8 py-3 text-sm font-bold text-primary hover:bg-primary hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 group">
+        <span>Load More Projects</span>
+        <span class="material-symbols-outlined text-[20px] group-hover:rotate-180 transition-transform duration-500">refresh</span>
+    </button>
+</div> -->
+</section>
+<!-- CTA Section -->
+<section class="bg-primary py-20 text-white">
+    <div class="mx-auto max-w-l px-6 lg:px-10 text-center">
+        <h2 class="text-3xl font-black sm:text-4xl lg:text-5xl hover:scale-105 transition-transform duration-500">Ingin Memasang Kanopi <br>yang Kuat, Rapi & Harga Terjangkau?</h2>
+        <p class="mx-auto mt-6 max-w-4xl text-lg text-white/80 leading-relaxed">
+            Percayakan kebutuhan kanopi Anda kepada Rizki Abadi Canopy. Kami menghadirkan kanopi dengan material berkualitas, pengerjaan rapi, serta harga yang tetap terjangkau.
+        </p>
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+            <a href="https://wa.me/<?php echo $nohp; ?>?text=Halo%20<?php echo $sapa; ?>,%20saya%20ingin%20konsultasi%20tentang%20canopy,%20Terimakasih." target="_blank" class="rounded-lg bg-white px-8 py-4 text-sm font-bold text-primary hover:bg-slate-100 hover:scale-105 hover:shadow-xl transition-all duration-300">KONSULTASI GRATIS</a>
+        </div>
+    </div>
+</section>
+</main>
+<!-- Footer -->
+<?php include 'shared/footer.php'; ?>
+</div>
+</body></html>
