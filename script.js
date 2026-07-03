@@ -47,7 +47,7 @@ function populateContactData() {
     }
 
     console.log('✅ WA_CONFIG ditemukan:', WA_CONFIG);
-
+	const yearnow1 = new Date(Date.now()).getFullYear();
     // Data mapping: id => value
     const dataMap = {
         'waDisplay': WA_CONFIG.notlp,
@@ -58,8 +58,10 @@ function populateContactData() {
         'companyDisplay': WA_CONFIG.companyname,
 	    'sapaDisplay': WA_CONFIG.sapa,
 	    'yearDisplay': WA_CONFIG.yearold,
-        'yearnow': new Date(Date.now()).getFullYear();
+		'yearnow': yearnow1,
     };
+
+	
 
     // Isi semua element dengan ID yang sesuai
     Object.keys(dataMap).forEach(id => {
