@@ -1,4 +1,3 @@
-<?php include('./shared/config.php'); ?>
 <!DOCTYPE html>
 <html class="scroll-smooth" lang="id">
 <head>
@@ -10,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo $base_url; ?>/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -42,6 +41,7 @@
             },
         }
     </script>
+    <script src="../script.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Plus+Jakarta+Sans:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap');
         
@@ -193,7 +193,7 @@
 </head>
 <body class="bg-white dark:bg-background-dark text-slate-900 dark:text-slate-100 font-body antialiased">
     <!-- Header -->
-    <?php include('shared/header.php'); ?>
+    <div id="header"></div>
 
     
     <!-- MAIN CONTENT - KANOPI AWNING DETAIL PAGE -->
@@ -273,13 +273,13 @@
                         <div class="flex items-center gap-4 mb-6">
                             <div class="flex -space-x-2">
                                 <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-300 overflow-hidden">
-                                    <img src="<?php echo $base_url; ?>/assets/images/webp/fajar.webp" alt="Customer" class="w-full h-full object-cover">
+                                    <img src="../assets/images/webp/fajar.webp" alt="Customer" class="w-full h-full object-cover">
                                 </div>
                                 <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-300 overflow-hidden">
-                                    <img src="<?php echo $base_url; ?>/assets/images/webp/adam.webp" alt="Customer" class="w-full h-full object-cover">
+                                    <img src="../assets/images/webp/adam.webp" alt="Customer" class="w-full h-full object-cover">
                                 </div>
                                 <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-300 overflow-hidden">
-                                    <img src="<?php echo $base_url; ?>/assets/images/webp/aisyah.webp" alt="Customer" class="w-full h-full object-cover">
+                                    <img src="../assets/images/webp/aisyah.webp" alt="Customer" class="w-full h-full object-cover">
                                 </div>
                             </div>
                             <div>
@@ -296,7 +296,7 @@
                         
                         <!-- Main Image -->
                         <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 hover-scale">
-                            <img src="<?php echo $base_url; ?>/assets/images/webp/Kanopi-Awning.webp" alt="Kanopi Awning Modern" class="w-full h-auto object-cover">
+                            <img src="../assets/images/webp/Kanopi-Awning.webp" alt="Kanopi Awning Modern" class="w-full h-auto object-cover">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
                         </div>
                         
@@ -411,7 +411,7 @@
                     <div class="relative">
                         <!-- Main Image -->
                         <div class="relative rounded-3xl overflow-hidden shadow-2xl">
-                            <img src="<?php echo $base_url; ?>/assets/images/webp/Kanopi-Awning-2.webp" alt="Struktur Kanopi Awning" class="w-full h-auto">
+                            <img src="../assets/images/webp/Kanopi-Awning-2.webp" alt="Struktur Kanopi Awning" class="w-full h-auto">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                         </div>
                         
@@ -639,7 +639,7 @@
 
         <section>
             <div class="max-w-7xl mx-auto px-6 lg:px-10">
-                <img src="<?php echo $base_url; ?>/assets/images/webp/Kanopi-Awning-3.webp" alt="Struktur Kanopi Awning" class="w-full h-auto">
+                <img src="../assets/images/webp/Kanopi-Awning-3.webp" alt="Struktur Kanopi Awning" class="w-full h-auto">
             </div>
             <div class="text-center mt-10">
                     <a href="https://wa.me/<?php echo $nohp; ?>?text=Halo%20<?php echo $sapa; ?>,%20saya%20mau%20tanya%20harga%20dan%20konsultasi%20Kanopi%20Awning,%20Terimakasih." class="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-primary/90 hover:text-white transition-all group">
@@ -735,7 +735,7 @@
                     
                     <!-- Item 1: Cafe & Resto -->
                     <div class="group relative overflow-hidden rounded-3xl shadow-xl hover-lift">
-                        <img src="<?php echo $base_url; ?>/assets/images/webp/Kanopi-Awning-4.webp" alt="Cafe Awning" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <img src="../assets/images/webp/Kanopi-Awning-4.webp" alt="Cafe Awning" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <span class="material-symbols-outlined text-3xl mb-2">restaurant</span>
@@ -746,7 +746,7 @@
                     
                     <!-- Item 2: Teras Rumah -->
                     <div class="group relative overflow-hidden rounded-3xl shadow-xl hover-lift">
-                        <img src="<?php echo $base_url; ?>/assets/images/webp/Kanopi-Awning-5.webp" alt="Teras Awning" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <img src="../assets/images/webp/Kanopi-Awning-5.webp" alt="Teras Awning" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <span class="material-symbols-outlined text-3xl mb-2">deck</span>
@@ -757,7 +757,7 @@
                     
                     <!-- Item 3: Toko & Retail -->
                     <div class="group relative overflow-hidden rounded-3xl shadow-xl hover-lift">
-                        <img src="<?php echo $base_url; ?>/assets/images/webp/Kanopi-Awning-6.webp" alt="Toko Awning" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <img src="../assets/images/webp/Kanopi-Awning-6.webp" alt="Toko Awning" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <span class="material-symbols-outlined text-3xl mb-2">storefront</span>
@@ -768,7 +768,7 @@
                     
                     <!-- Item 4: Balkon Apartemen -->
                     <div class="group relative overflow-hidden rounded-3xl shadow-xl hover-lift">
-                        <img src="<?php echo $base_url; ?>/assets/images/webp/Kanopi-Awning-7.webp" alt="Balkon Awning" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <img src="../assets/images/webp/Kanopi-Awning-7.webp" alt="Balkon Awning" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <span class="material-symbols-outlined text-3xl mb-2">balcony</span>
@@ -911,7 +911,7 @@
     </main>
 
     <!-- FOOTER -->
-    <?php include('shared/footer.php'); ?>
+    <div id="footer"></div>
 
 
     <!-- Simple JavaScript for FAQ Accordion -->
