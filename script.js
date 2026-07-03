@@ -1,6 +1,11 @@
 const WA_CONFIG = {
     number: '6285887639199', // Ganti dengan nomor Anda
-    defaultMessage: 'Halo Rizki Abadi Canopy, saya ingin konsultasi tentang canopy, Terimakasih.'
+    defaultMessage: 'Halo Rizki Abadi Canopy, saya ingin konsultasi tentang canopy, Terimakasih.',
+    notlp: '0858-8763-9199',
+    email: 'rizkiabadicanopy@gmail.com',
+    workshop: 'Sukabumi - Bogor - Jakarta - Bandung - Depok - Tangerang - Serang - dan sekitarnya',
+    jam_oprasional: '08:00 - 17:00 (Senin - Minggu)',
+    sapa: 'Rizki Abadi Canopy'
 };
 
 async function loadFile(file, elementId) {
@@ -32,6 +37,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 function openWhatsApp(message) {
-    const encodedMessage = encodeURIComponent(message || WA_CONFIG.defaultMessage);
+    const encodedMessage = encodeURIComponent(WA_CONFIG.sapa + ', ' + message || WA_CONFIG.defaultMessage);
     window.open(`https://wa.me/${WA_CONFIG.number}?text=${encodedMessage}`, '_blank');
 }
