@@ -40,3 +40,15 @@ function openWhatsApp(message) {
     const encodedMessage = encodeURIComponent(WA_CONFIG.sapa + ', ' + message || WA_CONFIG.defaultMessage);
     window.open(`https://wa.me/${WA_CONFIG.number}?text=${encodedMessage}`, '_blank');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+
+            // ===== 1. ISI DATA DARI CONFIG =====
+            document.getElementById('waDisplay').textContent = WA_CONFIG.notlp;
+            document.getElementById('emailDisplay').textContent = WA_CONFIG.email;
+            document.getElementById('phoneDisplay').textContent = WA_CONFIG.notlp;
+            document.getElementById('jamDisplay').textContent = WA_CONFIG.jam_oprasional;
+            document.getElementById('workshopDisplay').textContent = WA_CONFIG.workshop;
+            document.getElementById('companyDisplay').textContent = WA_CONFIG.sapa;
+
+});
