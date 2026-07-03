@@ -1,3 +1,8 @@
+const WA_CONFIG = {
+    number: '6285887639199', // Ganti dengan nomor Anda
+    defaultMessage: 'Halo Rizki Abadi Canopy, saya ingin konsultasi tentang canopy, Terimakasih.'
+};
+
 async function loadFile(file, elementId) {
     const element = document.getElementById(elementId);
 
@@ -25,3 +30,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         loadFile("/shared/footer.html", "footer")
     ]);
 });
+
+function openWhatsApp(message) {
+    const encodedMessage = encodeURIComponent(message || WA_CONFIG.defaultMessage);
+    window.open(`https://wa.me/${WA_CONFIG.number}?text=${encodedMessage}`, '_blank');
+}
