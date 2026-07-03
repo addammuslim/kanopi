@@ -1,6 +1,6 @@
 const WA_CONFIG = {
     number: '6285887639199', // Ganti dengan nomor Anda
-    defaultMessage: 'Halo Rizki Abadi Canopy, saya ingin konsultasi tentang canopy, Terimakasih.',
+    defaultMessage: 'Saya ingin konsultasi tentang canopy, Terimakasih.',
     notlp: '0858-8763-9199',
     email: 'rizkiabadicanopy@gmail.com',
     workshop: 'Sukabumi - Bogor - Jakarta - Bandung - Depok - Tangerang - Serang - dan sekitarnya',
