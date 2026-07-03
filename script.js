@@ -8,7 +8,7 @@ const WA_CONFIG = {
     jam_oprasional: '08:00 - 17:00 (Senin - Minggu)',
     sapa: 'Rizki Abadi Canopy',
     companyname: 'Rizki Abadi Canopy',
-    year: '1999'
+    yearold: '1999'
 };
 
 // ===== FUNGSI LOAD FILE =====
@@ -57,7 +57,7 @@ function populateContactData() {
         'workshopDisplay': WA_CONFIG.workshop,
         'companyDisplay': WA_CONFIG.companyname,
 	    'sapaDisplay': WA_CONFIG.sapa,
-	    'yearDisplay': WA_CONFIG.year,
+	    'yearDisplay': WA_CONFIG.yearold,
         'yearnow': new Date(Date.now()).getFullYear();
     };
 
