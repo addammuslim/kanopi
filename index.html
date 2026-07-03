@@ -1148,7 +1148,7 @@
         
         // Method 4: Jika semua cara gagal, gunakan default
         if (!city) {
-            city = 'Jakarta';
+            city = 'Membrane';
         }
         
         return city;
@@ -1200,8 +1200,8 @@
         const titleElement = document.querySelector('title');
         if (titleElement) {
             const currentTitle = titleElement.textContent;
-            if (currentTitle.includes('Jakarta')) {
-                titleElement.textContent = currentTitle.replace('Jakarta', city);
+            if (currentTitle.includes('Membrane')) {
+                titleElement.textContent = currentTitle.replace('Membrane', city);
             }
         }
     }
