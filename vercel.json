@@ -6,6 +6,10 @@
       "dest": "/assets/$1"
     },
     {
+      "src": "/(.*)\\.(js|css|json|xml|txt|ico|png|jpg|jpeg|gif|svg|webp|woff|woff2|ttf|eot)",
+      "dest": "/$1.$2"
+    },
+    {
       "src": "/sitemap-index.xml",
       "dest": "/sitemap-index.html"
     },
