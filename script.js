@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // ===== 1. ISI DATA DARI CONFIG =====
             document.getElementById('waDisplay').textContent = WA_CONFIG.notlp;
+    alert(WA_CONFIG.notlp);
             document.getElementById('emailDisplay').textContent = WA_CONFIG.email;
             document.getElementById('phoneDisplay').textContent = WA_CONFIG.notlp;
             document.getElementById('jamDisplay').textContent = WA_CONFIG.jam_oprasional;
