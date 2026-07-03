@@ -6,7 +6,9 @@ const WA_CONFIG = {
     email: 'rizkiabadicanopy@gmail.com',
     workshop: 'Sukabumi - Bogor - Jakarta - Bandung - Depok - Tangerang - Serang - dan sekitarnya',
     jam_oprasional: '08:00 - 17:00 (Senin - Minggu)',
-    sapa: 'Rizki Abadi Canopy'
+    sapa: 'Rizki Abadi Canopy',
+    companyname: 'Rizki Abadi Canopy',
+    year: '1999'
 };
 
 // ===== FUNGSI LOAD FILE =====
@@ -53,7 +55,10 @@ function populateContactData() {
         'phoneDisplay': WA_CONFIG.notlp,
         'jamDisplay': WA_CONFIG.jam_oprasional,
         'workshopDisplay': WA_CONFIG.workshop,
-        'companyDisplay': WA_CONFIG.sapa
+        'companyDisplay': WA_CONFIG.companyname,
+	    'sapaDisplay': WA_CONFIG.sapa,
+	    'yearDisplay': WA_CONFIG.year,
+        'yearnow': new Date(Date.now()).getFullYear();
     };
 
     // Isi semua element dengan ID yang sesuai
