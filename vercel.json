@@ -1,0 +1,105 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/sitemap-index\\.xml",
+      "dest": "/sitemap-index.html"
+    },
+    {
+      "src": "/page-sitemap\\.xml",
+      "dest": "/sitemap-detail.html"
+    },
+    {
+      "src": "/anime-sitemap([0-9]+)\\.xml",
+      "dest": "/sitemap-detail.html?i=$1"
+    },
+    {
+      "src": "/kota/([^/]+)/?",
+      "dest": "/index.html?kota=$1"
+    },
+    {
+      "src": "/portofolio/1",
+      "dest": "/detail-portofolio1.html"
+    },
+    {
+      "src": "/portofolio/2",
+      "dest": "/detail-portofolio2.html"
+    },
+    {
+      "src": "/portofolio/3",
+      "dest": "/detail-portofolio3.html"
+    },
+    {
+      "src": "/portofolio/4",
+      "dest": "/detail-portofolio4.html"
+    },
+    {
+      "src": "/portofolio/5",
+      "dest": "/detail-portofolio5.html"
+    },
+    {
+      "src": "/portofolio/6",
+      "dest": "/detail-portofolio6.html"
+    },
+    {
+      "src": "/portofolio/7",
+      "dest": "/detail-portofolio7.html"
+    },
+    {
+      "src": "/portofolio/8",
+      "dest": "/detail-portofolio8.html"
+    },
+    {
+      "src": "/portofolio/9",
+      "dest": "/detail-portofolio9.html"
+    },
+    {
+      "src": "/portofolio/10",
+      "dest": "/detail-portofolio10.html"
+    },
+    {
+      "src": "/portofolio/?",
+      "dest": "/portofolio.html"
+    },
+    {
+      "src": "/layanan/canopi-membran",
+      "dest": "/detail-canopi-membran.html"
+    },
+    {
+      "src": "/layanan/canopi-alderon",
+      "dest": "/detail-canopi-alderon.html"
+    },
+    {
+      "src": "/layanan/canopi-polycarbonate",
+      "dest": "/detail-canopi-polycarbonate.html"
+    },
+    {
+      "src": "/layanan/canopi-kaca-tempered",
+      "dest": "/detail-canopi-kaca-tempered.html"
+    },
+    {
+      "src": "/layanan/canopi-spandek",
+      "dest": "/detail-canopi-spandek.html"
+    },
+    {
+      "src": "/layanan/([0-9]+)",
+      "dest": "/detail-layanan$1.html"
+    },
+    {
+      "src": "/layanan/?",
+      "dest": "/layanan.html"
+    },
+    {
+      "src": "/tentang-kami/?",
+      "dest": "/about-us.html"
+    },
+    {
+      "src": "/hubungi-kami/?",
+      "dest": "/contact-us.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
