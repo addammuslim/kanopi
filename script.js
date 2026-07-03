@@ -21,7 +21,7 @@ async function loadFile(file, elementId) {
 
 document.addEventListener("DOMContentLoaded", async () => {
     await Promise.all([
-        loadFile("./shared/header.html", "header"),
-        loadFile("./shared/footer.html", "footer")
+        loadFile("/shared/header.html", "header"),
+        loadFile("/shared/footer.html", "footer")
     ]);
 });
