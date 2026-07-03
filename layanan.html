@@ -1,4 +1,3 @@
-<?php include('./shared/config.php'); ?>
 <!DOCTYPE html>
 <html class="scroll-smooth" lang="en">
 <head>
@@ -9,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo $base_url; ?>/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <style>
         @media (max-width: 768px) {
             .text-xl {
@@ -439,11 +438,12 @@
             },
         }
     </script>
+    <script src="script.js"></script>
 </head>
 <body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
 
 <!-- Top Navigation Bar dengan Menu Responsive Modern -->
-<?php include 'shared/header.php'; ?>
+<div id="header"></div>
 
 
 <!-- HERO SECTION - SUPER SIMPLE, RESPONSIVE, TANPA HARGA -->
@@ -483,7 +483,7 @@
                         <span class="material-symbols-outlined">chat</span>
                         Konsultasi Gratis
                     </a>
-                    <a href="<?php echo $base_url; ?>/portofolio" class="bg-white/10 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-slate-900 transition-all duration-300">
+                    <a href="./portofolio" class="bg-white/10 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-slate-900 transition-all duration-300">
                         Lihat Portofolio
                     </a>
                 </div>
@@ -492,7 +492,7 @@
             <!-- Kanan: Gambar (Desktop Only) -->
             <div class="hidden lg:block">
                 <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-                    <img src="<?php echo $base_url; ?>/assets/images/webp/cover-layanan.webp" alt="Kanopi Modern" class="w-full h-auto object-cover">
+                    <img src="./assets/images/webp/cover-layanan.webp" alt="Kanopi Modern" class="w-full h-auto object-cover">
                     <div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
                 </div>
             </div>
@@ -511,7 +511,7 @@
 <section class="lg:hidden block bg-slate-900 pb-16 px-6">
     <!-- Gambar terpisah untuk mobile -->
     <div class="rounded-xl overflow-hidden shadow-2xl mb-8">
-        <img src="<?php echo $base_url; ?>/assets/images/webp/cover-layanan.webp" alt="Kanopi" class="w-full h-56 object-cover">
+        <img src="./assets/images/webp/cover-layanan.webp" alt="Kanopi" class="w-full h-56 object-cover">
     </div>
     
     <!-- Teks ulang untuk mobile -->
@@ -549,7 +549,7 @@
 <!-- Item 1: Kanopi Membran -->
 <div class="group flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
     <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl shadow-2xl transition-all duration-700 group-hover:shadow-primary/10">
-        <img alt="Kanopi Membran" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="<?php echo $base_url; ?>/assets/images/webp/Kanopi-Membran.webp"/>
+        <img alt="Kanopi Membran" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="./assets/images/webp/Kanopi-Membran.webp"/>
     </div>
     <div class="w-full lg:w-1/2">
         <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-3">Kanopi Membran</h3>
@@ -587,7 +587,7 @@
             </li>
         </ul>
         <div class="flex flex-wrap gap-3">
-            <a href="<?php echo $base_url; ?>/layanan/canopi-membran" class="inline-flex gap-2 bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all group btn-detail btn-full-res">
+            <a href="./layanan/canopi-membran" class="inline-flex gap-2 bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all group btn-detail btn-full-res">
                 <span>Lihat Detail</span>
             </a>
             <a target="_blank" href="https://wa.me/6285887639199?text=Halo%20<?php echo $sapa; ?>,%20saya%20mau%20tanya%20harga%20dan%20konsultasi%20Kanopi%20Membran,%20Terimakasih." class="inline-flex gap-3 bg-primary text-white px-6 py-3 rounded-full font-bold hover:bg-primary/90 hover:text-white transition-all group btn-full-wa-res">
@@ -602,7 +602,7 @@
 <!-- Item 2: Kanopi Alderon (Reversed) -->
 <div class="group flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
     <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl shadow-2xl transition-all duration-700 group-hover:shadow-primary/10">
-        <img alt="Kanopi Alderon" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="<?php echo $base_url; ?>/assets/images/webp/Kanopi-Alderon.webp"/>
+        <img alt="Kanopi Alderon" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="./assets/images/webp/Kanopi-Alderon.webp"/>
     </div>
     <div class="w-full lg:w-1/2">
         <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-3">Kanopi Alderon (uPVC)</h3>
@@ -640,7 +640,7 @@
             </li>
         </ul>
         <div class="flex flex-wrap gap-3">
-            <a href="<?php echo $base_url; ?>/layanan/canopi-alderon" class="inline-flex gap-2 bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all group btn-detail btn-full-res">
+            <a href="./layanan/canopi-alderon" class="inline-flex gap-2 bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all group btn-detail btn-full-res">
                 <span>Lihat Detail</span>
             </a>
             <a target="_blank" href="https://wa.me/6285887639199?text=Halo%20<?php echo $sapa; ?>,%20saya%20mau%20tanya%20harga%20dan%20konsultasi%20Kanopi%20Alderon,%20Terimakasih." class="inline-flex gap-3 bg-primary text-white px-6 py-3 rounded-full font-bold hover:bg-primary/90 hover:text-white transition-all group btn-full-wa-res">
@@ -655,7 +655,7 @@
 <!-- Item 3: Kanopi Polycarbonate -->
 <div class="group flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
     <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl shadow-2xl transition-all duration-700 group-hover:shadow-primary/10">
-        <img alt="Kanopi Polycarbonate" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="<?php echo $base_url; ?>/assets/images/webp/Kanopi-Polycarbonate1.webp"/>
+        <img alt="Kanopi Polycarbonate" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="./assets/images/webp/Kanopi-Polycarbonate1.webp"/>
     </div>
     <div class="w-full lg:w-1/2">
         <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-3">Kanopi Polycarbonate</h3>
@@ -693,7 +693,7 @@
             </li>
         </ul>
         <div class="flex flex-wrap gap-3">
-            <a href="<?php echo $base_url; ?>/layanan/canopi-polycarbonate" class="inline-flex gap-2 bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all group btn-detail btn-full-res">
+            <a href="./layanan/canopi-polycarbonate" class="inline-flex gap-2 bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all group btn-detail btn-full-res">
                 <span>Lihat Detail</span>
             </a>
             <a target="_blank" href="https://wa.me/6285887639199?text=Halo%20<?php echo $sapa; ?>,%20saya%20mau%20tanya%20harga%20dan%20konsultasi%20Kanopi%20Polycarbonate,%20Terimakasih." class="inline-flex gap-3 bg-primary text-white px-6 py-3 rounded-full font-bold hover:bg-primary/90 hover:text-white transition-all group btn-full-wa-res">
@@ -708,7 +708,7 @@
 <!-- Item 4: Kanopi Kaca Tempered (Reversed) -->
 <div class="group flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
     <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl shadow-2xl transition-all duration-700 group-hover:shadow-primary/10">
-        <img alt="Kanopi Kaca Tempered" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="<?php echo $base_url; ?>/assets/images/webp/Kanopi-Kaca-Tempered.webp"/>
+        <img alt="Kanopi Kaca Tempered" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="./assets/images/webp/Kanopi-Kaca-Tempered.webp"/>
     </div>
     <div class="w-full lg:w-1/2">
         <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-3">Kanopi Kaca Tempered</h3>
@@ -740,7 +740,7 @@
             </li>
         </ul>
         <div class="flex flex-wrap gap-3">
-            <a href="<?php echo $base_url; ?>/layanan/canopi-kaca-tempered" class="inline-flex gap-2 bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all group btn-detail btn-full-res">
+            <a href="./layanan/canopi-kaca-tempered" class="inline-flex gap-2 bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all group btn-detail btn-full-res">
                 <span>Lihat Detail</span>
             </a>
             <a target="_blank" href="https://wa.me/6285887639199?text=Halo%20<?php echo $sapa; ?>,%20saya%20mau%20tanya%20harga%20dan%20konsultasi%20Kanopi%20Kaca%20Tempered,%20Terimakasih." class="inline-flex gap-3 bg-primary text-white px-6 py-3 rounded-full font-bold hover:bg-primary/90 hover:text-white transition-all group btn-full-wa-res">
@@ -755,7 +755,7 @@
 <!-- Item 5: Kanopi Spandek -->
 <div class="group flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
     <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl shadow-2xl transition-all duration-700 group-hover:shadow-primary/10">
-        <img alt="Kanopi Spandek" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="<?php echo $base_url; ?>/assets/images/webp/Kanopi-Spandek.webp"/>
+        <img alt="Kanopi Spandek" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="./assets/images/webp/Kanopi-Spandek.webp"/>
     </div>
     <div class="w-full lg:w-1/2">
         <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-3">Kanopi Spandek</h3>
@@ -793,7 +793,7 @@
             </li>
         </ul>
         <div class="flex flex-wrap gap-3">
-            <a href="<?php echo $base_url; ?>/layanan/canopi-spandek" class="inline-flex gap-2 bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all group btn-detail btn-full-res">
+            <a href="./layanan/canopi-spandek" class="inline-flex gap-2 bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all group btn-detail btn-full-res">
                 <span>Lihat Detail</span>
             </a>
             <a target="_blank" href="https://wa.me/6285887639199?text=Halo%20<?php echo $sapa; ?>,%20saya%20mau%20tanya%20harga%20dan%20konsultasi%20Kanopi%20Spandek,%20Terimakasih." class="inline-flex gap-3 bg-primary text-white px-6 py-3 rounded-full font-bold hover:bg-primary/90 hover:text-white transition-all group btn-full-wa-res">
@@ -817,7 +817,7 @@
 </section>
 
 <!-- Footer -->
-<?php include 'shared/footer.php'; ?>
+<div id="footer"></div>
 
 </body>
 </html>
