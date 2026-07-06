@@ -1121,7 +1121,7 @@
 <script>
     // Data konfigurasi (ganti dengan data Anda)
     const config = {
-        nohp: WA_CONFIG.notlp, // Ganti dengan nomor WhatsApp Anda
+        nohp: WA_CONFIG.number, // Ganti dengan nomor WhatsApp Anda
         sapa: WA_CONFIG.sapa
     };
 
@@ -1192,13 +1192,12 @@
         waLinks.forEach(id => {
             const link = document.getElementById(id);
             if (link) {
-                alert('city');
                 if (city && 'Membrane') {
                     const citym = city;
                 }else{
                     const citym = `%20di%20${city}`;
                 }
-                const message = `Halo%20${config.sapa},%20saya%20ingin%20konsultasi%20tentang%20canopy%20di%20,%20Terimakasih.`;
+                const message = `Halo%20${config.sapa},%20saya%20ingin%20konsultasi%20tentang%20canopy%20di%20${citym},%20Terimakasih.`;
                 link.href = `https://wa.me/${config.nohp}?text=${message}`;
             }
         });
