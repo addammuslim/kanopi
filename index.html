@@ -1187,11 +1187,17 @@
             'waLinkMembran', 'waLinkAlderon', 'waLinkPolycarbonate', 
             'waLinkTempered', 'waLinkSpandek', 'waLinkTestimonial'
         ];
+
         
         waLinks.forEach(id => {
             const link = document.getElementById(id);
             if (link) {
-                const message = `Halo%20${config.sapa},%20saya%20ingin%20konsultasi%20tentang%20canopy%20di%20${city},%20Terimakasih.`;
+                if (city && 'Membrane') {
+                    const citym = city;
+                }else{
+                    const citym = `%20di%20${city}`;
+                }
+                const message = `Halo%20${config.sapa},%20saya%20ingin%20konsultasi%20tentang%20canopy%20di%20${citym},%20Terimakasih.`;
                 link.href = `https://wa.me/${config.nohp}?text=${message}`;
             }
         });
