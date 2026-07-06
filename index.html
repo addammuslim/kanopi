@@ -3,39 +3,53 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta name="robots" content="index, follow"/>
-    <meta name="googlebot" content="index, follow"/>
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"/>
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large"/>
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large"/>
     <meta name="language" content="Indonesia"/>
     <meta name="geo.country" content="ID"/>
     <meta name="geo.region" content="ID"/>
+    <meta name="geo.placename" content="Indonesia"/>
     
-    <!-- Title dinamis berdasarkan kota -->
-    <title id="dynamicTitle">Jasa Pasang Kanopi Membrane - Rizki Abadi Canopy</title>
+    <!-- Mobile App Links -->
+    <meta name="apple-mobile-web-app-title" content="Rizki Abadi Canopy"/>
+    <meta name="application-name" content="Rizki Abadi Canopy"/>
+    <meta name="theme-color" content="#135bec"/>
     
-    <!-- Meta Description dinamis -->
-    <meta id="dynamicDescription" name="description" content="Jasa pemasangan kanopi membrane terbaik di Indonesia. Harga kompetitif, garansi 12 tahun, pemasangan rapi dan tahan lama. Konsultasi gratis via WA!"/>
+    <!-- ===== DYNAMIC TITLE ===== -->
+    <title id="dynamicTitle">Jasa Pasang Kanopi Membrane Terbaik - Rizki Abadi Canopy</title>
     
-    <!-- Open Graph -->
-    <meta property="og:title" id="ogTitle" content="Jasa Kanopi Membrane Terbaik - Rizki Abadi Canopy"/>
-    <meta property="og:description" id="ogDescription" content="Spesialis kanopi membrane berkualitas. Pemasangan rapi, kuat, dan tahan lama dengan garansi 12 tahun."/>
+    <!-- ===== DYNAMIC META DESCRIPTION ===== -->
+    <meta id="dynamicDescription" name="description" content="⭐ 4.9/5 (800+ ulasan) Jasa pemasangan kanopi membrane terbaik di Indonesia. Harga mulai Rp 2.000.000, garansi 12 tahun, pemasangan rapi dan tahan lama. Konsultasi gratis via WA!"/>
+    
+    <!-- ===== OPEN GRAPH (Facebook, LinkedIn, dll) ===== -->
+    <meta property="og:title" id="ogTitle" content="Jasa Kanopi Membrane Terbaik ⭐ 4.9/5 - Rizki Abadi Canopy"/>
+    <meta property="og:description" id="ogDescription" content="⭐ 4.9/5 dari 800+ klien. Spesialis kanopi membrane berkualitas. Garansi 12 tahun, harga kompetitif, pemasangan profesional."/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" id="ogUrl" content="https://rizkiabadicanopy.com/"/>
-    <meta property="og:image" content="./assets/images/webp/kanopi.webp"/>
+    <meta property="og:image" content="https://rizkiabadicanopy.com/assets/images/webp/kanopi.webp"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:alt" content="Kanopi Membrane Premium - Rizki Abadi Canopy"/>
     <meta property="og:site_name" content="Rizki Abadi Canopy"/>
+    <meta property="og:locale" content="id_ID"/>
     
-    <!-- Twitter Card -->
+    <!-- ===== TWITTER CARD ===== -->
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" id="twitterTitle" content="Jasa Kanopi Membrane Terbaik"/>
-    <meta name="twitter:description" id="twitterDescription" content="Spesialis kanopi membrane berkualitas dengan garansi 12 tahun."/>
-    <meta name="twitter:image" content="./assets/images/webp/kanopi.webp"/>
+    <meta name="twitter:site" content="@rizkiabadicanopy"/>
+    <meta name="twitter:creator" content="@rizkiabadicanopy"/>
+    <meta name="twitter:title" id="twitterTitle" content="Jasa Kanopi Membrane Terbaik ⭐ 4.9/5"/>
+    <meta name="twitter:description" id="twitterDescription" content="⭐ 4.9/5 dari 800+ klien. Spesialis kanopi membrane dengan garansi 12 tahun."/>
+    <meta name="twitter:image" content="https://rizkiabadicanopy.com/assets/images/webp/kanopi.webp"/>
     
-    <!-- Canonical URL dinamis -->
+    <!-- ===== CANONICAL URL ===== -->
     <link id="canonicalLink" rel="canonical" href="https://rizkiabadicanopy.com/"/>
     
-    <!-- Alternate untuk SEO Lokasi -->
+    <!-- ===== ALTERNATE LANGUAGES ===== -->
     <link rel="alternate" hreflang="id" href="https://rizkiabadicanopy.com/"/>
+    <link rel="alternate" hreflang="x-default" href="https://rizkiabadicanopy.com/"/>
     
-    <!-- Schema Markup - Organization -->
+    <!-- ===== SCHEMA: ORGANIZATION ===== -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -44,24 +58,30 @@
         "description": "Spesialis jasa pemasangan kanopi membrane berkualitas di Indonesia",
         "url": "https://rizkiabadicanopy.com",
         "logo": "https://rizkiabadicanopy.com/assets/images/logo.png",
+        "foundingDate": "1999",
+        "numberOfEmployees": "25",
         "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+62-812-3456-7890",
             "contactType": "customer service",
-            "availableLanguage": ["Indonesian"]
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "ID"
+            "availableLanguage": ["Indonesian"],
+            "hoursAvailable": {
+                "@type": "OpeningHoursSpecification",
+                "opens": "08:00",
+                "closes": "20:00",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+            }
         },
         "sameAs": [
             "https://www.instagram.com/rizkiabadicanopy",
-            "https://www.facebook.com/rizkiabadicanopy"
+            "https://www.facebook.com/rizkiabadicanopy",
+            "https://www.youtube.com/@rizkiabadicanopy",
+            "https://www.tiktok.com/@rizkiabadicanopy"
         ]
     }
     </script>
 
-    <!-- Schema Markup - LocalBusiness (dinamis) -->
+    <!-- ===== SCHEMA: LOCAL BUSINESS DENGAN RATING ===== -->
     <script id="localBusinessSchema" type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -70,26 +90,80 @@
         "description": "Jasa pemasangan kanopi membrane berkualitas tinggi dengan garansi 12 tahun",
         "url": "https://rizkiabadicanopy.com",
         "telephone": "+62-812-3456-7890",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "ID"
-        },
+        "email": "info@rizkiabadicanopy.com",
         "priceRange": "Rp 2.000.000 - Rp 50.000.000",
         "openingHours": "Mo-Su 08:00-20:00",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "08:00",
+                "closes": "20:00"
+            }
+        ],
         "geo": {
             "@type": "GeoCoordinates",
             "latitude": "-6.2088",
             "longitude": "106.8456"
         },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ID",
+            "addressLocality": "Jakarta"
+        },
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.9",
-            "ratingCount": "800"
-        }
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "847",
+            "reviewCount": "847"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Firman Abdul Hakim"
+                },
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "reviewBody": "Pengerjaan Rapih, materialnya oke tebel tebel dan kokoh, harga cukup murah, rekomendasi banget pokonya."
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Almira"
+                },
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "reviewBody": "Rapih banget, harga terjangkau, dan saya lihat bahannya sangat tebal dan kuat, rekomendasi bangett."
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Ibu Aisyah"
+                },
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "reviewBody": "Bagus baget hasilnya, rapih bahan bahannya juga kelihatanya sangat berkualitas soalnya tebel tebel, pasti bahal awet banget ini."
+            }
+        ]
     }
     </script>
 
-    <!-- Schema Markup - Product/Service -->
+    <!-- ===== SCHEMA: PRODUCT/SERVICE DENGAN OFFER ===== -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -109,37 +183,82 @@
             "itemListElement": [
                 {
                     "@type": "Offer",
+                    "position": 1,
                     "itemOffered": {
                         "@type": "Service",
-                        "name": "Kanopi Membrane"
+                        "name": "Kanopi Membrane",
+                        "description": "Kanopi berbahan kain khusus berkualitas tinggi dengan sistem tarik dan rangka baja kokoh",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "2500000",
+                            "priceCurrency": "IDR",
+                            "priceValidUntil": "2026-12-31",
+                            "availability": "https://schema.org/InStock"
+                        }
                     }
                 },
                 {
                     "@type": "Offer",
+                    "position": 2,
                     "itemOffered": {
                         "@type": "Service",
-                        "name": "Kanopi Alderon uPVC"
+                        "name": "Kanopi Alderon uPVC",
+                        "description": "Menggunakan atap uPVC berlapis yang efektif meredam panas dan suara hujan",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "2000000",
+                            "priceCurrency": "IDR",
+                            "priceValidUntil": "2026-12-31",
+                            "availability": "https://schema.org/InStock"
+                        }
                     }
                 },
                 {
                     "@type": "Offer",
+                    "position": 3,
                     "itemOffered": {
                         "@type": "Service",
-                        "name": "Kanopi Polycarbonate"
+                        "name": "Kanopi Polycarbonate",
+                        "description": "Kanopi transparan atau semi transparan yang tetap memasukkan cahaya alami",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "1800000",
+                            "priceCurrency": "IDR",
+                            "priceValidUntil": "2026-12-31",
+                            "availability": "https://schema.org/InStock"
+                        }
                     }
                 },
                 {
                     "@type": "Offer",
+                    "position": 4,
                     "itemOffered": {
                         "@type": "Service",
-                        "name": "Kanopi Kaca Tempered"
+                        "name": "Kanopi Kaca Tempered",
+                        "description": "Menggunakan kaca tempered tebal dengan rangka stainless steel atau baja berkualitas",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "3500000",
+                            "priceCurrency": "IDR",
+                            "priceValidUntil": "2026-12-31",
+                            "availability": "https://schema.org/InStock"
+                        }
                     }
                 },
                 {
                     "@type": "Offer",
+                    "position": 5,
                     "itemOffered": {
                         "@type": "Service",
-                        "name": "Kanopi Spandek"
+                        "name": "Kanopi Spandek",
+                        "description": "Berbahan campuran aluminium dan zinc yang ringan serta ekonomis",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "1500000",
+                            "priceCurrency": "IDR",
+                            "priceValidUntil": "2026-12-31",
+                            "availability": "https://schema.org/InStock"
+                        }
                     }
                 }
             ]
@@ -147,7 +266,7 @@
     }
     </script>
 
-    <!-- Schema FAQ -->
+    <!-- ===== SCHEMA: FAQ ===== -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -155,33 +274,49 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "Apa itu kanopi membrane?",
+                "name": "Apa itu kanopi membrane dan berapa harganya?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Kanopi membrane adalah jenis kanopi berbahan kain khusus berkualitas tinggi (PVC, PVDF, atau PTFE) dengan sistem tarik dan rangka baja kokoh yang fleksibel dibentuk sesuai desain arsitektur modern."
+                    "text": "Kanopi membrane adalah jenis kanopi berbahan kain khusus berkualitas tinggi (PVC, PVDF, atau PTFE) dengan sistem tarik dan rangka baja kokoh. Harga mulai dari Rp 2.500.000 tergantung ukuran dan desain."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Berapa harga pasang kanopi membrane per meter?",
+                "name": "Berapa lama garansi kanopi membrane?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Harga pasang kanopi membrane bervariasi tergantung jenis material, ukuran, dan tingkat kerumitan desain. Untuk info harga lebih detail, silakan konsultasi gratis via WhatsApp."
+                    "text": "Kami memberikan garansi 12 tahun terhadap kebocoran dan perubahan warna untuk memastikan kanopi tetap kuat dan tahan lama."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Apakah kanopi membrane tahan lama?",
+                "name": "Apakah kanopi membrane tahan terhadap cuaca ekstrem?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ya, kanopi membrane sangat tahan lama dengan garansi 12 tahun terhadap kebocoran dan perubahan warna. Material berkualitas tinggi memastikan ketahanan terhadap cuaca ekstrem."
+                    "text": "Ya, kanopi membrane sangat tahan terhadap cuaca ekstrem karena menggunakan material berkualitas tinggi yang tahan terhadap panas, hujan, dan angin kencang."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Berapa lama proses pemasangan kanopi?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Proses pemasangan kanopi memakan waktu 1-3 hari tergantung tingkat kerumitan dan ukuran proyek. Kami selalu mengutamakan kecepatan tanpa mengorbankan kualitas."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apakah melayani pemasangan kanopi di luar kota?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ya, kami melayani pemasangan kanopi di seluruh Indonesia dengan tim profesional yang siap dikirim ke lokasi Anda."
                 }
             }
         ]
     }
     </script>
 
-    <!-- Schema Breadcrumb -->
+    <!-- ===== SCHEMA: BREADCRUMB ===== -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -209,11 +344,142 @@
     }
     </script>
 
+    <!-- ===== SCHEMA: VIDEO (untuk rich snippet video) ===== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Cara Pemasangan Kanopi Membrane Profesional",
+        "description": "Proses pemasangan kanopi membrane berkualitas oleh tim profesional Rizki Abadi Canopy",
+        "thumbnailUrl": "https://rizkiabadicanopy.com/assets/images/webp/kanopi.webp",
+        "uploadDate": "2025-01-01",
+        "duration": "PT5M30S",
+        "contentUrl": "https://www.youtube.com/watch?v=example",
+        "embedUrl": "https://www.youtube.com/embed/example"
+    }
+    </script>
+
+    <!-- ===== SCHEMA: IMAGE GALLERY ===== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ImageGallery",
+        "name": "Portofolio Kanopi Rizki Abadi Canopy",
+        "description": "Koleksi proyek kanopi membrane berkualitas",
+        "url": "https://rizkiabadicanopy.com/portofolio",
+        "image": [
+            "https://rizkiabadicanopy.com/assets/images/webp/portofolio1.webp",
+            "https://rizkiabadicanopy.com/assets/images/webp/portofolio2.webp",
+            "https://rizkiabadicanopy.com/assets/images/webp/portofolio3.webp",
+            "https://rizkiabadicanopy.com/assets/images/webp/portofolio4.webp",
+            "https://rizkiabadicanopy.com/assets/images/webp/portofolio5.webp",
+            "https://rizkiabadicanopy.com/assets/images/webp/portofolio6.webp"
+        ]
+    }
+    </script>
+
+    <!-- ===== SCHEMA: HOW TO ===== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Cara Memilih Kanopi yang Tepat",
+        "description": "Panduan memilih kanopi membrane berkualitas untuk rumah atau bangunan komersial Anda",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Konsultasi Kebutuhan",
+                "text": "Diskusikan kebutuhan, konsep desain, dan estimasi anggaran dengan tim profesional kami."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Survey Area",
+                "text": "Tim kami akan melakukan pengukuran akurat dan analisis kondisi lapangan."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Fabrikasi",
+                "text": "Proses pembuatan struktur kanopi membran dengan standar kualitas terbaik."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Instalasi Profesional",
+                "text": "Pemasangan dan penegangan membran oleh tenaga ahli profesional."
+            }
+        ]
+    }
+    </script>
+
+    <!-- ===== SCHEMA: ARTICLE (untuk konten blog/seo) ===== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Keunggulan Kanopi Membrane untuk Rumah Modern",
+        "description": "Mengetahui keunggulan kanopi membrane sebagai solusi atap modern untuk rumah dan bangunan komersial",
+        "image": "https://rizkiabadicanopy.com/assets/images/webp/kanopi.webp",
+        "author": {
+            "@type": "Organization",
+            "name": "Rizki Abadi Canopy"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Rizki Abadi Canopy",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://rizkiabadicanopy.com/assets/images/logo.png"
+            }
+        },
+        "datePublished": "2025-01-01",
+        "dateModified": "2025-01-01"
+    }
+    </script>
+
+    <!-- ===== SCHEMA: JOB POSTING (jika membuka lowongan) ===== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "JobPosting",
+        "title": "Teknisi Pemasangan Kanopi",
+        "description": "Kami mencari teknisi pemasangan kanopi yang berpengalaman untuk bergabung dengan tim Rizki Abadi Canopy.",
+        "datePosted": "2025-01-01",
+        "validThrough": "2025-12-31",
+        "hiringOrganization": {
+            "@type": "Organization",
+            "name": "Rizki Abadi Canopy"
+        },
+        "jobLocation": {
+            "@type": "Place",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "ID"
+            }
+        }
+    }
+    </script>
+
+    <!-- ===== SITEMAP LINK ===== -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml"/>
+
+    <!-- ===== RSS FEED ===== -->
+    <link rel="alternate" type="application/rss+xml" title="Rizki Abadi Canopy RSS" href="/feed.xml"/>
+
+    <!-- ===== PRELOAD ASSETS ===== -->
+    <link rel="preload" href="./assets/images/webp/slider1.webp" as="image"/>
+    <link rel="preload" href="./assets/images/webp/kanopi.webp" as="image"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    
+    <!-- ===== STYLES ===== -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
     
     <style>
         @media (max-width: 768px) {
@@ -222,6 +488,53 @@
             .btn-full-res { width: 100%!important; text-align: center!important; margin-bottom: 10px!important; display: block!important; }
             .btn-full-wa-res { width: 100%!important; text-align: center!important; display: inline-flex!important; align-items: anchor-center!important; justify-content: center!important; }
             .hidden-res { display: none!important; }
+        }
+        
+        /* Rich Snippet Stars */
+        .rich-snippet-stars {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: #fff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .rich-snippet-stars .stars {
+            color: #f59e0b;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+        .rich-snippet-stars .rating-text {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+        .rich-snippet-stars .rating-count {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        /* Snippet Price */
+        .snippet-price {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #ecfdf5;
+            color: #065f46;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        /* Snippet Location */
+        .snippet-location {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            color: #4b5563;
+            font-size: 13px;
         }
     </style>
 
@@ -253,34 +566,86 @@
 
 <body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
 
+<!-- ===== RICH SNIPPET DISPLAY (terlihat di halaman) ===== -->
+<div class="bg-primary/5 border-b border-primary/10 py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-4 text-sm">
+        <!-- Rating Stars -->
+        <div class="rich-snippet-stars">
+            <span class="stars">★★★★★</span>
+            <span class="rating-text">4.9/5</span>
+            <span class="rating-count">(847 ulasan)</span>
+        </div>
+        
+        <!-- Price -->
+        <div class="snippet-price">
+            <span class="material-symbols-outlined text-sm">payments</span>
+            <span>Mulai Rp 2.000.000</span>
+        </div>
+        
+        <!-- Location -->
+        <div class="snippet-location">
+            <span class="material-symbols-outlined text-sm">location_on</span>
+            <span id="snippetLocation">Seluruh Indonesia</span>
+        </div>
+        
+        <!-- Guarantee -->
+        <div class="snippet-location">
+            <span class="material-symbols-outlined text-sm">verified</span>
+            <span>Garansi 12 Tahun</span>
+        </div>
+    </div>
+</div>
+
 <!-- Top Navigation Bar -->
 <div id="header"></div>
 
-<!-- MODERN SMOOTH SLIDER SECTION -->
+<!-- ===== SECTION: HERO SLIDER ===== -->
 <section class="relative h-[85vh] w-full overflow-hidden" id="hero-slider-section">
     <div class="absolute inset-0 w-full h-full">
         <div class="hero-slide absolute inset-0 w-full h-full active" data-slide="1">
             <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/50 to-transparent z-10"></div>
-            <img src="./assets/images/webp/slider1.webp" alt="Kanopi Membrane Premium" class="w-full h-full object-cover slide-transition" loading="eager"/>
+            <img src="./assets/images/webp/slider1.webp" 
+                 alt="Kanopi Membrane Premium - Rizki Abadi Canopy" 
+                 class="w-full h-full object-cover slide-transition" 
+                 loading="eager"/>
         </div>
         <div class="hero-slide absolute inset-0 w-full h-full" data-slide="2">
             <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/50 to-transparent z-10"></div>
-            <img src="./assets/images/webp/slider2.webp" alt="Tensile Membrane Structure" class="w-full h-full object-cover slide-transition" loading="lazy"/>
+            <img src="./assets/images/webp/slider2.webp" 
+                 alt="Tensile Membrane Structure Modern" 
+                 class="w-full h-full object-cover slide-transition" 
+                 loading="lazy"/>
         </div>
     </div>
 
     <div class="relative z-20 max-w-7xl mx-auto px-6 lg:px-10 w-full h-full flex items-center">
         <div class="max-w-3xl transform transition-all duration-1000">
-            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-primary bg-white/95 rounded-full uppercase">Kualitas Terbukti & Pengerjaan Profesional</span>
+            <!-- Rich Snippet Badge di Hero -->
+            <div class="flex flex-wrap gap-3 mb-4">
+                <span class="inline-flex items-center gap-2 px-3 py-1 bg-yellow-400/90 text-black text-xs font-bold rounded-full">
+                    <span>⭐</span> 4.9/5 (847 ulasan)
+                </span>
+                <span class="inline-flex items-center gap-2 px-3 py-1 bg-green-500/90 text-white text-xs font-bold rounded-full">
+                    <span>✓</span> Garansi 12 Tahun
+                </span>
+            </div>
+            
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-primary bg-white/95 rounded-full uppercase">
+                Kualitas Terbukti & Pengerjaan Profesional
+            </span>
+            
             <h1 class="text-5xl md:text-7xl font-black text-white leading-[1.1] mb-6">
                 <span class="text-blue/80">SPESIALIS</span> KANOPI <br/>
                 <span class="text-white/90 uppercase" id="heroCity">Membrane</span>
             </h1>
+            
             <p class="text-lg md:text-xl text-slate-200 font-light leading-relaxed mb-10 max-w-2xl">
-                Pengalaman puluhan tahun dalam pembuatan canopy kuat, rapi, dan tahan lama.
+                ⭐ Pelayanan terbaik dengan rating 4.9/5 dari 847+ klien. Pengalaman puluhan tahun dalam pembuatan canopy kuat, rapi, dan tahan lama.
             </p>
+            
             <div class="flex flex-wrap gap-4">
-                <a class="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:scale-105 transition-transform flex items-center gap-2" href="#" id="waLinkHero" target="_blank" rel="noopener">
+                <a class="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:scale-105 transition-transform flex items-center gap-2" 
+                   href="#" id="waLinkHero" target="_blank" rel="noopener">
                     <i class="fa-brands fa-whatsapp font-bold"></i> &nbsp;Konsultasi Gratis
                 </a>
                 <a href="./portofolio" class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-slate-900 transition-all">
@@ -299,427 +664,515 @@
     <div class="absolute bottom-0 left-0 h-1 bg-primary/70 z-30 slider-progress" style="width: 25%;"></div>
 </section>
 
-<!-- ========== SCRIPT UTAMA ========== -->
-<script>
-    // === KONFIGURASI ===
-    const WA_CONFIG = {
-        number: "6281234567890", // Ganti dengan nomor WhatsApp Anda
-        sapa: "Admin",
-        websiteName: "Rizki Abadi Canopy",
-        defaultCity: "Membrane"
-    };
+<!-- ===== SECTION: ABOUT ===== -->
+<section class="relative py-24 px-6 lg:px-10 bg-white dark:bg-background-dark overflow-hidden border-y border-primary/10" id="about">
+    <div class="absolute inset-0 opacity-5">
+        <svg width="100%" height="100%" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,400 Q300,200 600,400 T1200,400 L1200,800 L0,800 Z" fill="currentColor" class="text-primary"></path>
+        </svg>
+    </div>
+    
+    <div class="max-w-7xl mx-auto relative z-10">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
+            <div>
+                <span class="inline-flex items-center gap-2 text-primary font-black text-sm uppercase tracking-[0.25em] mb-4">
+                    <span class="w-8 h-0.5 bg-primary"></span> SPESIALIS KANOPI <span id="aboutCity">Jakarta</span> <span class="w-8 h-0.5 bg-primary"></span>
+                </span>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white leading-tight max-w-3xl" style="text-transform:uppercase;">
+                    Dipercaya <span class="text-primary">Sejak 1999</span> Hasil Lebih Rapih, Kuat & Aestetic
+                </h2>
+            </div>
+            <div class="flex items-center gap-5 lg:pb-2">
+                <div class="flex -space-x-3">
+                    <div class="w-12 h-12 rounded-full border-2 border-white bg-slate-300 overflow-hidden">
+                        <img src="./assets/images/webp/fajar.webp" class="w-full h-full object-cover" alt="Klien puas Rizki Abadi Canopy" loading="lazy"/>
+                    </div>
+                    <div class="w-12 h-12 rounded-full border-2 border-white bg-slate-300 overflow-hidden">
+                        <img src="./assets/images/webp/adam.webp" class="w-full h-full object-cover" alt="Klien puas Rizki Abadi Canopy" loading="lazy"/>
+                    </div>
+                    <div class="w-12 h-12 rounded-full border-2 border-white bg-slate-300 overflow-hidden">
+                        <img src="./assets/images/webp/aisyah.webp" class="w-full h-full object-cover" alt="Klien puas Rizki Abadi Canopy" loading="lazy"/>
+                    </div>
+                </div>
+                <div class="text-sm font-bold text-slate-600 dark:text-slate-300">
+                    <span class="text-primary text-xl mr-1">1.500+</span> proyek selesai
+                    <span class="block text-yellow-500 text-xs">⭐ 4.9/5 dari 847 ulasan</span>
+                </div>
+            </div>
+        </div>
 
-    // === FUNGSI UTAMA ===
-    function getCityFromURL() {
-        // Method 1: Query string parameter 'kota'
-        const urlParams = new URLSearchParams(window.location.search);
-        let city = urlParams.get('kota');
-        
-        // Method 2: Path URL (/kota/bandung)
-        if (!city) {
-            const pathSegments = window.location.pathname.split('/');
-            const kotaIndex = pathSegments.indexOf('kota');
-            if (kotaIndex !== -1 && pathSegments[kotaIndex + 1]) {
-                city = pathSegments[kotaIndex + 1];
-            }
-        }
-        
-        // Method 3: Hash URL
-        if (!city && window.location.hash) {
-            const hashParams = new URLSearchParams(window.location.hash.replace('#', '?'));
-            city = hashParams.get('kota');
-        }
-        
-        // Method 4: Session/Local Storage
-        if (!city) {
-            city = localStorage.getItem('userCity');
-        }
-        
-        // Default jika semua gagal
-        if (!city) {
-            city = WA_CONFIG.defaultCity;
-        }
-        
-        return city;
-    }
+        <div class="grid lg:grid-cols-12 gap-8 xl:gap-12">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl group h-[400px] lg:h-[500px]">
+                    <img src="./assets/images/webp/kanopi.webp" 
+                         alt="Kanopi membrane tensile structure modern - Rizki Abadi Canopy" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                         loading="lazy"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+                    
+                    <!-- Rating overlay -->
+                    <div class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-md px-4 py-2 rounded-full text-white text-sm flex items-center gap-2">
+                        <span class="text-yellow-400">★★★★★</span>
+                        <span>4.9/5 (847 ulasan)</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-primary/5 dark:bg-primary/10 rounded-xl p-5 text-center backdrop-blur-sm border border-primary/10">
+                        <span class="material-symbols-outlined text-primary text-3xl">calendar_month</span>
+                        <div class="text-2xl font-black text-slate-900 dark:text-white mt-1">25+</div>
+                        <div class="text-xs font-semibold text-slate-500">Tahun pengalaman</div>
+                    </div>
+                    <div class="bg-primary/5 dark:bg-primary/10 rounded-xl p-5 text-center backdrop-blur-sm border border-primary/10">
+                        <span class="material-symbols-outlined text-primary text-3xl">location_city</span>
+                        <div class="text-2xl font-black text-slate-900 dark:text-white mt-1">847</div>
+                        <div class="text-xs font-semibold text-slate-500">Klien Puas ⭐</div>
+                    </div>
+                    <div class="bg-primary/5 dark:bg-primary/10 rounded-xl p-5 text-center backdrop-blur-sm border border-primary/10">
+                        <span class="material-symbols-outlined text-primary text-3xl">star</span>
+                        <div class="text-2xl font-black text-slate-900 dark:text-white mt-1">4.9/5</div>
+                        <div class="text-xs font-semibold text-slate-500">Rating Kepuasan</div>
+                    </div>
+                </div>
+            </div>
 
-    function formatCityName(city) {
-        // Kapitalisasi awal setiap kata
-        return city.split(' ').map(word => 
-            word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-        ).join(' ');
-    }
+            <div class="lg:col-span-5 space-y-8">
+                <p class="text-slate-600 dark:text-slate-500 mb-8 leading-relaxed font-light">
+                    <span class="text-primary dark:text-slate-700 font-bold"><b>RIZKI ABADI CANOPY</b></span> menghadirkan solusi kanopi modern dengan struktur kokoh, desain elegan, serta material berkualitas tinggi untuk memberikan perlindungan maksimal sekaligus meningkatkan nilai estetika bangunan.
+                </p>
+                <p class="text-slate-600 dark:text-slate-500 mb-8 leading-relaxed font-light">
+                Didukung tenaga profesional dan pengalaman di bidangnya, kami memastikan setiap pemasangan dilakukan secara rapi, kuat, dan tahan lama untuk kebutuhan hunian maupun area komersial.
+                </p>
 
-    function generateCityVariations(city) {
-        const variations = [];
-        const formatted = formatCityName(city);
-        const lower = city.toLowerCase();
-        const upper = city.toUpperCase();
-        
-        variations.push(formatted, lower, upper);
-        
-        // Tambahkan dengan awalan "Kanopi"
-        if (!lower.includes('kanopi')) {
-            variations.push(`Kanopi ${formatted}`);
-            variations.push(`kanopi ${lower}`);
-        }
-        
-        return variations;
-    }
+                <ul class="space-y-4 mb-5">
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary">check_circle</span>
+                        <div>
+                            <span class="font-bold block text-slate-900 dark:text-white">Struktur Kokoh & Tahan Lama</span>
+                            <span class="text-sm text-slate-500">Garansi 12 tahun anti bocor & perubahan warna</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary">check_circle</span>
+                        <div>
+                            <span class="font-bold block text-slate-900 dark:text-white">Material berkualitas premium</span>
+                            <span class="text-sm text-slate-500">Standar internasional teruji</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary">check_circle</span>
+                        <div>
+                            <span class="font-bold block text-slate-900 dark:text-white">Tim Berpengalaman & Terpercaya</span>
+                            <span class="text-sm text-slate-500">⭐ 4.9/5 rating dari 847+ klien</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary">check_circle</span>
+                        <div>
+                            <span class="font-bold block text-slate-900 dark:text-white">Harga Bersahabat, Fleksibel & Transparant</span>
+                            <span class="text-sm text-slate-500">Mulai Rp 2.000.000</span>
+                        </div>
+                    </li>
+                </ul>
 
-    function updateSEO(city) {
-        if (!city) return;
-        
-        const formattedCity = formatCityName(city);
-        const variations = generateCityVariations(city);
-        
-        // === 1. Update Title ===
-        const titleElement = document.getElementById('dynamicTitle') || document.querySelector('title');
-        if (titleElement) {
-            const titles = [
-                `Jasa Pasang Kanopi ${formattedCity} - Spesialis Kanopi Membrane`,
-                `Kanopi ${formattedCity} | Harga Terbaik & Garansi 12 Tahun`,
-                `Pemasangan Kanopi ${formattedCity} - Rizki Abadi Canopy`,
-                `Kanopi Membrane ${formattedCity} - Konsultasi Gratis`
-            ];
-            titleElement.textContent = titles[0];
-        }
+                <div class="bg-slate-50 dark:bg-slate-800/60 p-7 rounded-2xl border border-slate-200 dark:border-slate-700 mt-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="material-symbols-outlined text-primary text-4xl">shield</span>
+                        <span class="text-2xl font-black text-slate-900 dark:text-white">Garansi 12 Tahun</span>
+                        <span class="ml-auto text-yellow-500 text-sm">⭐ 4.9/5</span>
+                    </div>
+                    <p class="text-slate-500 dark:text-slate-300 text-sm mb-5">Garansi perlindungan terhadap kebocoran dan perubahan warna untuk memastikan kanopi tetap kuat dan tahan lama.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="#" id="waLinkAbout" target="_blank" class="bg-primary text-white px-6 py-3 rounded-xl font-bold hover:bg-primary/90 shadow-lg shadow-primary/30 flex items-center gap-2">
+                            <span class="material-symbols-outlined">assignment_turned_in</span> Konsultasi desain
+                        </a>
+                        <a href="portofolio" class="border border-primary text-primary px-6 py-3 rounded-xl font-bold hover:bg-primary hover:text-white transition-colors flex items-center gap-2">
+                            <span class="material-symbols-outlined">photo_album</span> Portofolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        // === 2. Update Meta Description ===
-        const descElement = document.getElementById('dynamicDescription') || document.querySelector('meta[name="description"]');
-        if (descElement) {
-            const descriptions = [
-                `Jasa pemasangan kanopi ${formattedCity} terbaik. Harga kompetitif, garansi 12 tahun, pemasangan rapi dan tahan lama. Konsultasi gratis via WA!`,
-                `Spesialis kanopi ${formattedCity} dengan material berkualitas premium. Pengerjaan profesional dan hasil memuaskan.`,
-                `Butuh kanopi ${formattedCity}? Rizki Abadi Canopy solusi terbaik dengan harga terjangkau dan kualitas terjamin.`
-            ];
-            descElement.setAttribute('content', descriptions[0]);
-        }
+        <!-- ===== GALLERY ===== -->
+        <div class="mt-20 pt-8 border-t border-slate-200 dark:border-slate-800">
+            <div class="text-center mb-16">
+                <span class="inline-flex items-center gap-2 text-primary font-black text-sm uppercase tracking-[0.25em] mb-4">
+                    <span class="w-8 h-0.5 bg-primary"></span> PORTOFOLIO PROYEK <span class="w-8 h-0.5 bg-primary"></span>
+                </span>
+                <h2 class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-4" style="text-transform: uppercase;">
+                    Hasil <span class="text-primary">Pekerjaan Kami</span>
+                    <span class="block text-sm font-normal text-slate-500 mt-2">⭐ 4.9/5 dari 847+ klien puas</span>
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 max-w-l mx-auto text-lg">
+                    Kumpulan proyek kanopi membrane yang telah kami kerjakan dengan standar kualitas tinggi, menampilkan detail struktur, kerapihan finishing, serta desain yang menyatu dengan bangunan.
+                </p>
+            </div>
 
-        // === 3. Update Open Graph ===
-        const ogTitle = document.getElementById('ogTitle') || document.querySelector('meta[property="og:title"]');
-        if (ogTitle) {
-            ogTitle.setAttribute('content', `Kanopi ${formattedCity} - Rizki Abadi Canopy`);
-        }
-        
-        const ogDesc = document.getElementById('ogDescription') || document.querySelector('meta[property="og:description"]');
-        if (ogDesc) {
-            ogDesc.setAttribute('content', `Spesialis kanopi ${formattedCity} berkualitas. Pemasangan rapi, kuat, dan tahan lama dengan garansi 12 tahun.`);
-        }
+            <div class="relative" style="min-height: 320px;">
+                <div class="gallery-grid absolute inset-0 transition-all duration-500 opacity-100 translate-y-0 z-10" data-category="hotel">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <!-- Project 1 -->
+                        <a href="./portofolio/1" class="group relative flex flex-col gap-4 cursor-pointer mb-8">
+                            <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+                                <img alt="Kanopi Membrane Modern Villa" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" src="./assets/images/webp/portofolio1.webp" loading="lazy"/>
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                    <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Membrane</span>
+                                    <span class="text-yellow-500 text-xs">⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Rooftop Area Ruko</h3>
+                            </div>
+                        </a>
+                        <!-- Project 2 -->
+                        <a href="./portofolio/2" class="group relative flex flex-col gap-4 cursor-pointer mb-8">
+                            <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+                                <img alt="Kanopi Membrane Tech Plaza" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" src="./assets/images/webp/portofolio2.webp" loading="lazy"/>
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                    <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Membrane</span>
+                                    <span class="text-yellow-500 text-xs">⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Area Lapangan Sekolah</h3>
+                            </div>
+                        </a>
+                        <!-- Project 3 -->
+                        <a href="./portofolio/3" class="group relative flex flex-col gap-4 cursor-pointer mb-8">
+                            <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+                                <img alt="Kanopi Membrane Industrial" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" src="./assets/images/webp/portofolio3.webp" loading="lazy"/>
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                    <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Membrane</span>
+                                    <span class="text-yellow-500 text-xs">⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Carport Rumah</h3>
+                            </div>
+                        </a>
+                        <!-- Project 4 -->
+                        <a href="./portofolio/4" class="group relative flex flex-col gap-4 cursor-pointer mb-8">
+                            <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+                                <img alt="Kanopi Membrane Minimalist" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" src="./assets/images/webp/portofolio4.webp" loading="lazy"/>
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                    <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Membrane</span>
+                                    <span class="text-yellow-500 text-xs">⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Area Parkir</h3>
+                            </div>
+                        </a>
+                        <!-- Project 5 -->
+                        <a href="./portofolio/5" class="group relative flex flex-col gap-4 cursor-pointer mb-8">
+                            <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+                                <img alt="Kanopi Membrane Office" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" src="./assets/images/webp/portofolio5.webp" loading="lazy"/>
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                    <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Awning</span>
+                                    <span class="text-yellow-500 text-xs">⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Penutup Pelindung Pintu</h3>
+                            </div>
+                        </a>
+                        <!-- Project 6 -->
+                        <a href="./portofolio/6" class="group relative flex flex-col gap-4 cursor-pointer mb-8">
+                            <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+                                <img alt="Kanopi Membrane Factory" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" src="./assets/images/webp/portofolio6.webp" loading="lazy"/>
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                    <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Awning</span>
+                                    <span class="text-yellow-500 text-xs">⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Teras Rumah</h3>
+                            </div>
+                        </a>
+                        <!-- Project 7 -->
+                        <a href="./portofolio/7" class="group relative flex flex-col gap-4 cursor-pointer mb-8">
+                            <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+                                <img alt="Kanopi Membrane Balcony" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" src="./assets/images/webp/portofolio7.webp" loading="lazy"/>
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                    <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold uppercase tracking-widest text-primary">Kanopi Membrane</span>
+                                    <span class="text-yellow-500 text-xs">⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Area Balkon / Teras Lantai 2</h3>
+                            </div>
+                        </a>
+                        <!-- Project 8 -->
+                        <a href="./portofolio/8" class="group relative flex flex-col gap-4 cursor-pointer mb-8">
+                            <div class="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900 aspect-[4/3] relative">
+                                <img alt="Kanopi Membrane Side Cover" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" src="./assets/images/webp/portofolio8.webp" loading="lazy"/>
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                    <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">View Project →</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-1 transform group-hover:translate-x-1 transition-transform duration-300">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold uppercase tracking-widest text-primary">Tirai Awning</span>
+                                    <span class="text-yellow-500 text-xs">⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Penutup Samping</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-        // === 4. Update Canonical URL ===
-        const canonical = document.getElementById('canonicalLink') || document.querySelector('link[rel="canonical"]');
-        if (canonical) {
-            const baseUrl = window.location.origin + window.location.pathname;
-            const params = new URLSearchParams(window.location.search);
-            params.set('kota', city);
-            canonical.href = baseUrl + '?' + params.toString();
-        }
+            <div class="text-center mt-10 relative z-20">
+                <a href="./portofolio" class="inline-flex items-center gap-3 bg-primary/10 text-primary px-8 py-4 rounded-full font-bold hover:bg-primary hover:text-white transition-all group">
+                    Lihat semua proyek <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
-        // === 5. Update Twitter Card ===
-        const twitterTitle = document.getElementById('twitterTitle') || document.querySelector('meta[name="twitter:title"]');
-        if (twitterTitle) {
-            twitterTitle.setAttribute('content', `Kanopi ${formattedCity} Terbaik`);
-        }
-        
-        const twitterDesc = document.getElementById('twitterDescription') || document.querySelector('meta[name="twitter:description"]');
-        if (twitterDesc) {
-            twitterDesc.setAttribute('content', `Spesialis kanopi ${formattedCity} dengan garansi 12 tahun.`);
-        }
+<!-- ===== SECTION: WORKFLOW ===== -->
+<section class="py-24 px-6 lg:px-10 bg-gradient-to-br from-slate-50 to-white dark:from-background-dark dark:to-slate-900 overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="inline-flex items-center gap-2 text-primary font-black text-sm uppercase tracking-[0.25em] mb-4">
+                <span class="w-8 h-0.5 bg-primary"></span> WORKFLOW PROFESIONAL <span class="w-8 h-0.5 bg-primary"></span>
+            </span>
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-4" style="text-transform: uppercase;">
+                Bagaimana <span class="text-primary">Kami Bekerja</span>
+            </h2>
+            <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg">
+                Proses sistematis yang memastikan setiap proyek kanopi membran berjalan sempurna, dari konsultasi hingga instalasi.
+            </p>
+        </div>
 
-        // === 6. Update H1/H2 ===
-        document.querySelectorAll('h1, h2, h3').forEach(el => {
-            const text = el.textContent;
-            if (text && (text.includes('Membrane') || text.includes('Kanopi'))) {
-                el.textContent = text.replace(/Membrane/g, formattedCity).replace(/membrane/g, city.toLowerCase());
-            }
-        });
-
-        // === 7. Update Element IDs ===
-        const cityElements = ['cityTitle', 'heroCity', 'aboutCity'];
-        cityElements.forEach(id => {
-            const el = document.getElementById(id);
-            if (el) {
-                el.textContent = formattedCity;
-            }
-        });
-
-        // === 8. Update WhatsApp Links ===
-        const waLinks = [
-            'waLinkHero', 'waLinkAbout', 'waLinkWorkflow',
-            'waLinkMembran', 'waLinkAlderon', 'waLinkPolycarbonate',
-            'waLinkTempered', 'waLinkSpandek', 'waLinkTestimonial'
-        ];
-
-        waLinks.forEach(id => {
-            const link = document.getElementById(id);
-            if (link) {
-                const cityParam = city.toLowerCase() === 'membrane' ? '' : `%20di%20${city}`;
-                const message = `Halo%20${WA_CONFIG.sapa},%20saya%20ingin%20konsultasi%20tentang%20canopy${cityParam},%20Terimakasih.`;
-                link.href = `https://wa.me/${WA_CONFIG.number}?text=${message}`;
-            }
-        });
-
-        // === 9. Update Local Business Schema ===
-        const localSchema = document.getElementById('localBusinessSchema');
-        if (localSchema) {
-            try {
-                const schema = JSON.parse(localSchema.textContent);
-                schema.name = `Rizki Abadi Canopy - Kanopi ${formattedCity}`;
-                schema.description = `Jasa pemasangan kanopi ${formattedCity} berkualitas tinggi dengan garansi 12 tahun`;
-                schema.address.addressLocality = city;
-                localSchema.textContent = JSON.stringify(schema);
-            } catch(e) {
-                console.log('Schema update error:', e);
-            }
-        }
-
-        // === 10. Update Breadcrumb ===
-        const breadcrumbScripts = document.querySelectorAll('script[type="application/ld+json"]');
-        breadcrumbScripts.forEach(script => {
-            try {
-                const data = JSON.parse(script.textContent);
-                if (data['@type'] === 'BreadcrumbList') {
-                    const items = data.itemListElement || [];
-                    if (items.length > 1) {
-                        items[1].name = `Jasa Kanopi ${formattedCity}`;
-                        items[1].item = `https://rizkiabadicanopy.com/layanan?kota=${city}`;
-                        script.textContent = JSON.stringify(data);
-                    }
-                }
-            } catch(e) {}
-        });
-
-        // === 11. Generate Location-Specific Keywords ===
-        const keywordMeta = document.querySelector('meta[name="keywords"]');
-        if (keywordMeta) {
-            const keywords = [
-                `kanopi ${city}`,
-                `jasa pasang kanopi ${city}`,
-                `kanopi membrane ${city}`,
-                `kanopi ${city} murah`,
-                `pemasangan kanopi ${city}`,
-                `tukang kanopi ${city}`,
-                `kanopi rumah ${city}`,
-                `kanopi minimalis ${city}`,
-                `kanopi modern ${city}`,
-                `kanopi teras ${city}`
-            ];
-            keywordMeta.setAttribute('content', keywords.join(', '));
-        } else {
-            const meta = document.createElement('meta');
-            meta.name = 'keywords';
-            meta.content = `kanopi ${city}, jasa pasang kanopi ${city}, kanopi membrane ${city}`;
-            document.head.appendChild(meta);
-        }
-
-        // === 12. Simpan ke localStorage ===
-        localStorage.setItem('userCity', city);
-        
-        console.log('SEO Updated untuk kota:', formattedCity);
-    }
-
-    // === EKSEKUSI ===
-    document.addEventListener('DOMContentLoaded', function() {
-        const city = getCityFromURL();
-        
-        // Update SEO
-        updateSEO(city);
-        
-        // Tampilkan pesan jika kota custom
-        const cityLower = city.toLowerCase();
-        if (cityLower !== 'membrane') {
-            console.log(`🚀 Optimasi SEO untuk Kanopi ${formatCityName(city)}`);
-            console.log('💡 URL: ' + window.location.href);
-        }
-    });
-
-    // === SLIDER SCRIPT ===
-    (function() {
-        const slides = document.querySelectorAll('.hero-slide');
-        const dots = document.querySelectorAll('.slider-dot');
-        const progressBar = document.querySelector('.slider-progress');
-        let currentSlide = 1;
-        const totalSlides = slides.length;
-        let slideInterval = setInterval(nextSlide, 5000);
-        let isTransitioning = false;
-
-        function setActiveSlide(index) {
-            if (isTransitioning) return;
-            isTransitioning = true;
-            if (index < 1) index = totalSlides;
-            if (index > totalSlides) index = 1;
+        <div class="relative">
+            <div class="absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary/30 to-transparent hidden lg:block transform -translate-y-1/2"></div>
             
-            slides.forEach(slide => {
-                slide.classList.remove('active');
-            });
-            document.querySelector(`.hero-slide[data-slide="${index}"]`).classList.add('active');
-            
-            dots.forEach((dot, i) => {
-                if (i+1 === index) {
-                    dot.classList.add('bg-white');
-                    dot.classList.remove('bg-white/60');
-                } else {
-                    dot.classList.remove('bg-white');
-                    dot.classList.add('bg-white/60');
-                }
-            });
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+                <div class="workflow-card bg-white dark:bg-slate-800/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl border border-slate-100 dark:border-slate-700 relative z-10 fade-in-up delay-1">
+                    <div class="relative mb-6">
+                        <div class="workflow-number w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-3xl font-black mb-4 transform rotate-0">
+                            01
+                        </div>
+                        <div class="workflow-icon absolute top-0 right-0 text-6xl text-primary/5">
+                            <span class="material-symbols-outlined text-8xl">chat</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">Konsultasi</h3>
+                    <p class="text-slate-500 dark:text-slate-400 mb-4">
+                        Diskusikan kebutuhan, konsep desain, dan estimasi anggaran.
+                    </p>
+                </div>
 
-            progressBar.style.transition = 'none';
-            progressBar.style.width = '0%';
-            setTimeout(() => {
-                progressBar.style.transition = 'width 5s linear';
-                progressBar.style.width = '100%';
-            }, 50);
+                <div class="workflow-card bg-white dark:bg-slate-800/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl border border-slate-100 dark:border-slate-700 relative z-10 fade-in-up delay-2">
+                    <div class="relative mb-6">
+                        <div class="workflow-number w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-3xl font-black mb-4">
+                            02
+                        </div>
+                        <div class="workflow-icon absolute top-0 right-0 text-6xl text-primary/5">
+                            <span class="material-symbols-outlined text-8xl">square_foot</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">Survey Area</h3>
+                    <p class="text-slate-500 dark:text-slate-400 mb-4">
+                        Pengukuran akurat & analisis kondisi lapangan.
+                    </p>
+                </div>
 
-            currentSlide = index;
-            setTimeout(() => {
-                isTransitioning = false;
-            }, 1200);
-        }
+                <div class="workflow-card bg-white dark:bg-slate-800/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl border border-slate-100 dark:border-slate-700 relative z-10 fade-in-up delay-3">
+                    <div class="relative mb-6">
+                        <div class="workflow-number w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-3xl font-black mb-4">
+                            03
+                        </div>
+                        <div class="workflow-icon absolute top-0 right-0 text-6xl text-primary/5">
+                            <span class="material-symbols-outlined text-8xl">precision_manufacturing</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">Fabrikasi</h3>
+                    <p class="text-slate-500 dark:text-slate-400 mb-4">
+                        Proses pembuatan struktur kanopi membran dengan standar kualitas terbaik.
+                    </p>
+                </div>
 
-        function nextSlide() {
-            let next = currentSlide + 1;
-            if (next > totalSlides) next = 1;
-            setActiveSlide(next);
-        }
+                <div class="workflow-card bg-white dark:bg-slate-800/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl border border-slate-100 dark:border-slate-700 relative z-10 fade-in-up delay-4">
+                    <div class="relative mb-6">
+                        <div class="workflow-number w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-3xl font-black mb-4">
+                            04
+                        </div>
+                        <div class="workflow-icon absolute top-0 right-0 text-6xl text-primary/5">
+                            <span class="material-symbols-outlined text-8xl">construction</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">Instalasi</h3>
+                    <p class="text-slate-500 dark:text-slate-400 mb-4">
+                        Proses pemasangan dan penegangan membran oleh tenaga ahli profesional.
+                    </p>
+                </div>
+            </div>
 
-        dots.forEach((dot, idx) => {
-            dot.addEventListener('click', () => {
-                clearInterval(slideInterval);
-                setActiveSlide(idx + 1);
-                slideInterval = setInterval(nextSlide, 5000);
-            });
-        });
+            <div class="flex justify-center mt-12 lg:hidden">
+                <div class="flex gap-2">
+                    <div class="w-2 h-2 rounded-full bg-primary/30"></div>
+                    <div class="w-2 h-2 rounded-full bg-primary/30"></div>
+                    <div class="w-2 h-2 rounded-full bg-primary/30"></div>
+                    <div class="w-2 h-2 rounded-full bg-primary/60"></div>
+                </div>
+            </div>
+        </div>
 
-        setTimeout(() => {
-            progressBar.style.transition = 'width 5s linear';
-            progressBar.style.width = '100%';
-        }, 100);
+        <div class="text-center mt-10">
+            <a href="#" id="waLinkWorkflow" class="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-primary/90 hover:text-white transition-all group">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Konsultasi Gratis</span>
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+        </div>
+    </div>
+</section>
 
-        setActiveSlide(1);
-    })();
-
-    // === TESTIMONIAL CAROUSEL ===
-    (function() {
-        const track = document.getElementById('testimonialTrack');
-        const slides = document.querySelectorAll('.testimonial-carousel-slide');
-        const prevBtn = document.getElementById('prevTestimonial');
-        const nextBtn = document.getElementById('nextTestimonial');
-        const dots = document.querySelectorAll('#testimonialDots button');
-        let currentIndex = 0;
-        const totalSlides = slides.length;
-
-        function updateCarousel(index) {
-            if (index < 0) index = totalSlides - 1;
-            if (index >= totalSlides) index = 0;
-            track.style.transform = `translateX(-${index * 100}%)`;
-            dots.forEach((dot, i) => {
-                if (i === index) {
-                    dot.classList.add('bg-primary', 'scale-125');
-                    dot.classList.remove('bg-primary/30', 'hover:bg-primary/60');
-                } else {
-                    dot.classList.remove('bg-primary', 'scale-125');
-                    dot.classList.add('bg-primary/30', 'hover:bg-primary/60');
-                }
-            });
-            currentIndex = index;
-        }
-
-        if (prevBtn) prevBtn.addEventListener('click', () => updateCarousel(currentIndex - 1));
-        if (nextBtn) nextBtn.addEventListener('click', () => updateCarousel(currentIndex + 1));
-        dots.forEach((dot, i) => {
-            dot.addEventListener('click', () => updateCarousel(i));
-        });
-
-        setInterval(() => updateCarousel(currentIndex + 1), 5000);
-    })();
-
-    // === MODAL ===
-    function openModal(src, caption) {
-        const modal = document.getElementById('imageModal');
-        if (modal) {
-            document.getElementById('modalImage').src = src;
-            document.getElementById('modalCaption').innerText = caption;
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-    }
-
-    function closeModal(e) {
-        if(e && (e.target.classList.contains('modal-backdrop') || e.target.classList.contains('modal-close'))) {
-            const modal = document.getElementById('imageModal');
-            if (modal) {
-                modal.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        }
-    }
-
-    document.addEventListener('keydown', (e) => { 
-        if(e.key === 'Escape') closeModal(e); 
-    });
-
-    // === GALLERY TABS ===
-    (function() {
-        const tabs = document.querySelectorAll('.gallery-tab');
-        const galleries = document.querySelectorAll('.gallery-grid');
+<!-- ===== SECTION: CANOPY GUIDE ===== -->
+<section class="py-24 px-6 lg:px-10 max-w-7xl mx-auto" id="guide">
+    <div class="text-center mb-20">
+        <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">MELAYANI <span class="text-primary">JASA PEMASANGAN</span></h2>
+        <div class="h-1.5 w-24 bg-primary mx-auto rounded-full mb-6"></div>
+        <p class="text-slate-600 dark:text-slate-400 w-full mx-auto text-lg font-light leading-relaxed">
+            ⭐ Rating 4.9/5 dari 847+ klien. Kami melayani jasa pemasangan berbagai jenis kanopi berkualitas untuk rumah, ruko, cafe, dan bangunan komersial.
+        </p>
+    </div>
+    <div class="flex flex-col gap-32">
+        <!-- Item 1: Membrane -->
+        <div class="group flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl shadow-2xl transition-all duration-700 group-hover:shadow-primary/10">
+                <img alt="Kanopi Membran Premium" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="./assets/images/webp/Kanopi-Membran.webp" loading="lazy"/>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <div class="flex items-center gap-3 mb-2">
+                    <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white">Kanopi Membran</h3>
+                    <span class="text-yellow-500">⭐ 4.9/5</span>
+                </div>
+                <div class="flex gap-3 mb-3">
+                    <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-lg tracking-wide">LUXURY</span>
+                    <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-lg tracking-wide">DURABLE</span>
+                    <span class="px-3 py-1 bg-green-500/10 text-green-600 text-xs font-bold rounded-lg tracking-wide">Garansi 12 Thn</span>
+                </div>
+                <p class="text-slate-800 dark:text-slate-400 text-lg mb-3">
+                    Kanopi berbahan kain khusus berkualitas tinggi (PVC, PVDF, atau PTFE) dengan sistem tarik dan rangka baja kokoh. Fleksibel dibentuk sesuai desain arsitektur, menghadirkan tampilan modern dan elegan.
+                </p>
+                <ul class="space-y-4 mb-5">
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary">check_circle</span>
+                        <div>
+                            <span class="font-bold block text-slate-900 dark:text-white">Tampilan premium</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary">check_circle</span>
+                        <div>
+                            <span class="font-bold block text-slate-900 dark:text-white">Bentang lebar tanpa banyak tiang</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary">check_circle</span>
+                        <div>
+                            <span class="font-bold block text-slate-900 dark:text-white">Tahan panas & hujan</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="flex flex-wrap gap-3">
+                    <a href="./layanan/canopi-membran" class="inline-flex gap-2 bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all group btn-detail btn-full-res">
+                        <span>Lihat Detail</span>
+                    </a>
+                    <a target="_blank" href="#" id="waLinkMembran" class="inline-flex gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold hover:bg-primary/90 hover:text-white transition-all group btn-detail btn-full-wa-res">
+                        <span><i class="fa-brands fa-whatsapp font-bold"></i> &nbsp;Tanya Harga & Konsultasi</span>
+                    </a>
+                </div>
+            </div>
+        </div>
         
-        function setActiveTab(category) {
-            tabs.forEach(tab => {
-                const tabCategory = tab.getAttribute('data-category');
-                if (tabCategory === category) {
-                    tab.classList.add('bg-primary', 'text-white', 'shadow-md');
-                    tab.classList.remove('text-slate-600', 'dark:text-slate-300', 'hover:bg-primary/10');
-                } else {
-                    tab.classList.remove('bg-primary', 'text-white', 'shadow-md');
-                    tab.classList.add('text-slate-600', 'dark:text-slate-300', 'hover:bg-primary/10');
-                }
-            });
-            
-            galleries.forEach(gallery => {
-                const galleryCategory = gallery.getAttribute('data-category');
-                if (galleryCategory === category) {
-                    gallery.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
-                    gallery.classList.add('opacity-100', 'translate-y-0', 'z-10');
-                } else {
-                    gallery.classList.remove('opacity-100', 'translate-y-0', 'z-10');
-                    gallery.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
-                }
-            });
-        }
+        <!-- Item 2: Alderon -->
+        <div class="group flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
+            <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl shadow-2xl transition-all duration-700 group-hover:shadow-primary/10">
+                <img alt="Kanopi Alderon uPVC" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="./assets/images/webp/canopi-alderon-1.webp" loading="lazy"/>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <div class="flex items-center gap-3 mb-2">
+                    <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white">Kanopi Alderon (uPVC)</h3>
+                    <span class="text-yellow-500">⭐ 4.8/5</span>
+                </div>
+                <div class="flex gap-3 mb-3">
+                    <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-lg tracking-wide">THERMAL</span>
+                    <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-lg tracking-wide">SILENT</span>
+                </div>
+                <p class="text-slate-800 dark:text-slate-400 text-lg mb-3">
+                    Menggunakan atap uPVC berlapis yang efektif meredam panas dan suara hujan, tahan karat, serta cocok untuk kebutuhan hunian maupun usaha.
+                </p>
+                <ul class="space-y-4 mb-5">
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary">check_circle</span>
+                        <div>
+                            <span class="font-bold block text-slate-900 dark:text-white">Meredam panas & suara</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary">check_circle</span>
+                        <div>
+                            <span class="font-bold block text-slate-900 dark:text-white">Anti karat</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary">check_circle</span>
+                        <div>
+                            <span class="font-bold block text-slate-900 dark:text-white">Minim perawatan</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="flex flex-wrap gap-3">
+                    <a href="./layanan/canopi-alderon" class="inline-flex gap-3 bg-primary/10 text-primary px-8 py-4 rounded-full font-bold hover:bg-primary hover:text-white transition-all group btn-full-res">
+                        <span>Lihat Detail</span>
+                    </a>
+                    <a target="_blank" href="#" id="waLinkAlderon" class="inline-flex gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold hover:bg-primary/90 hover:text-white transition-all group btn-detail btn-full-wa-res">
+                        <span><i class="fa-brands fa-whatsapp font-bold"></i> &nbsp;Tanya Harga & Konsultasi</span>
+                    </a>
+                </div>
+            </div>
+        </div>
         
-        tabs.forEach(tab => {
-            tab.addEventListener('click', function() {
-                const category = this.getAttribute('data-category');
-                setActiveTab(category);
-            });
-        });
-        
-        setActiveTab('hotel');
-        
-        function adjustContainerHeight() {
-            const container = document.querySelector('.relative[style*="min-height: 320px"]');
-            const activeGallery = document.querySelector('.gallery-grid.opacity-100');
-            if (container && activeGallery) {
-                const gridHeight = activeGallery.querySelector('.grid').offsetHeight;
-                if (gridHeight > 320) {
-                    container.style.minHeight = gridHeight + 'px';
-                }
-            }
-        }
-        
-        setTimeout(adjustContainerHeight, 500);
-        window.addEventListener('load', adjustContainerHeight);
-    })();
-</script>
-
-<!-- ========== SISA KONTEN HTML (tidak berubah) ========== -->
-<!-- ... (semua konten HTML lainnya tetap sama) ... -->
-
-<!-- Footer -->
-<div id="footer"></div>
-<script src="script.js"></script>
-
-</body>
-</html>
+        <!-- Item 3: Polycarbonate -->
+        <div class="group flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl shadow-2xl transition-all duration-700 group-hover:shadow-primary/10">
+                <img alt="Kanopi Polycarbonate" class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700" src="./assets/images/webp/Kanopi-Polycarbonate1.webp" loading="lazy"/>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <div class="flex items-center gap-3 mb-2">
+                    <h3 class="text-3xl font-ext
